@@ -1,0 +1,22 @@
+{
+  "name": "airdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "."
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev .",
+    "serve": "vuepress dev .",
+    "build": "vuepress build .",
+    "deploy": "bash deploy.sh"
+  },
+  "keywords": [],
+  "author": "Dean",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
