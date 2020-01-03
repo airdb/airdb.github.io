@@ -49,7 +49,6 @@ module.exports = {
         lastUpdated: '上次更新',
         nav: require('../config/nav-zh-CN.js'),
         sidebar: {
-          '/zh/linux/': getLinuxSidebar(),
           '/zh/bbhj/': getBbhjSidebar(),
           '/zh/open/ai/': getAlgorithmSidebar(),
           '/zh/english/': getEnglishSidebar(),
@@ -61,44 +60,6 @@ module.exports = {
   }
 }
 
-
-function getLinuxSidebar() {
-  return [
-    {
-      title: 'Part 1: Base Skills',
-      collapsable: true,
-      children: [
-        '',
-        'bash',
-        'bash-prog',
-        'vim',
-        'ssh',
-        'tools',
-      ]
-    },
-    {
-      title: 'Part 2: Base Service',
-      collapsable: true,
-      children: [
-        'nginx',
-        'dhcp',
-      ]
-    },
-    {
-      title: 'Part 3: Linux Performance',
-      collapsable: true,
-      children: [
-        'monitor'
-      ]
-    },
-    {
-      title: 'Part 4: Linux Monitor',
-      collapsable: true,
-      children: [
-      ]
-    }
-  ]
-}
 
 function getBbhjSidebar() {
   return [
