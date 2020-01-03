@@ -49,7 +49,6 @@ module.exports = {
         lastUpdated: '上次更新',
         nav: require('../config/nav-zh-CN.js'),
         sidebar: {
-          '/zh/bbhj/': getBbhjSidebar(),
           '/zh/open/ai/': getAlgorithmSidebar(),
           '/zh/english/': getEnglishSidebar(),
           '/zh/go/': getGoSidebar()
@@ -60,50 +59,6 @@ module.exports = {
   }
 }
 
-
-function getBbhjSidebar() {
-  return [
-    {
-      title: 'Part 1: 基本信息',
-      collapsable: true,
-      children: [
-        '',
-        'intro',
-        'team'
-      ]
-    },
-    {
-      title: 'Part 2: 工作报告',
-      collapsable: true,
-      children: [
-        'report/',
-        'report/template'
-      ]
-    },
-    {
-      title: 'Part 3: 日常维护',
-      collapsable: true,
-      children: [
-        'bbs-deploy',
-        'changelog'
-      ]
-    },
-    {
-      title: 'Part 4: 孵化项目',
-      collapsable: true,
-      children: [
-        'new-project'
-      ]
-    },
-    {
-      title: 'Part 5: 参考',
-      collapsable: true,
-      children: [
-        'reference'
-      ]
-    }
-  ]
-}
 
 function getAlgorithmSidebar() {
   return [
