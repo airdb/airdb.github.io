@@ -1,3 +1,0 @@
-# Overview
-
-Hack with kube.

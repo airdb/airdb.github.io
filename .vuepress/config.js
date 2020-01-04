@@ -227,30 +227,3 @@ function getSidebar_en_courses() {
     }
   ]
 }
-
-function getSidebar_en_kube() {
-  return [
-    {
-      title: 'Overview',
-      collapsable: true,
-      children: [
-        ''
-      ]
-    },
-    {
-      title: 'Kube Requirement',
-      collapsable: true,
-      children: [
-        '1-kubernetes-on-macOS',
-        '2-ingress-exmaple'
-      ]
-    },
-    {
-      title: 'Helm',
-      collapsable: true,
-      children: [
-        '5-helm'
-      ]
-    }
-  ]
-}
