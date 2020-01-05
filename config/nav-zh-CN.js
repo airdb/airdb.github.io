@@ -1,5 +1,6 @@
 module.exports = [
   { text: '构建状态', link: '/status/' },
+  { text: 'Wiki', link: 'https://airdb.wiki/' },
   { text: '维护项目',
     items: [
       {
