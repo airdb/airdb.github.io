@@ -1,15 +1,17 @@
 ---
 home: true
+heroText: Builder
 heroImage:
 actionText: Get Started →
 actionLink: /en/guide/
 features:
-- title: Public Benefits
-  details: Support some websites of public welfare by our IT technology.
-- title: Labs College
-  details: Share compute science courses.
-- title:
-  details:
+- title: Kindly
+  details: We support some websites of public welfare by our IT technology.
+- title: Shared
+  details: We share compute science courses.
+- title: Leading
+  details: We focus on technology solutions of lower-cost, more large-scale and higher-efficient.
+
 footer: MIT Licensed | Copyright © 2015-present airdb.
 ---
 

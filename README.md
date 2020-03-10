@@ -5,12 +5,14 @@ heroImage:
 actionText: Get Started →
 actionLink: /en/guide/
 features:
-- title: Kindly
-  details: We support some websites of public welfare by our IT technology.
-- title: Shared
-  details: We share compute science courses.
-- title: Leading
-  details: We focus on technology solutions of lower-cost, more large-scale and higher-efficient.
+- title: Thought
+  details: Changing thoughts with others, and respecting to industry leaders.
+- title: Technology
+  details: learning high-tech for daily work.
+- title: Life
+  details: Sharing each moment of daily life.
+- title: Builder
+  details: Building or creating a things with Intelligent Manufacturing
 
 footer: MIT Licensed | Copyright © 2015-present airdb.
 ---
