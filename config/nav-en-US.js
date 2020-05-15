@@ -1,6 +1,6 @@
 module.exports = [
   { text: 'Status', link: '/status/' },
-  { text: 'Wiki', link: 'https://airdb.wiki/' },
+  { text: 'Wiki', link: 'https://airdb-wiki.github.io' },
   {
     text: 'Guide',
     items: [
