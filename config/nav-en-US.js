@@ -1,6 +1,6 @@
 module.exports = [
   { text: 'Status', link: '/status/' },
-  { text: 'Wiki', link: 'https://airdb-wiki.github.io' },
+  { text: 'Wiki', link: 'https://airdb-wiki.github.io#outboundlink' },
   {
     text: 'Guide',
     items: [
@@ -13,7 +13,7 @@ module.exports = [
       {
         text: 'Github',
         items: [
-          {text: 'Init', link: 'https://www.airdb.com/init/'},
+          {text: 'Init', link: 'https://www.airdb.com/init/', rel:''},
           {text: 'Interview', link: 'https://www.airdb.com/interview/'},
           {text: 'Tensorflow', link: '/tf-go/'},
         ]
