@@ -46,4 +46,4 @@ Make a difference in the world.
 
 - <font size=6 color=#F3716E>  B: Better </font>
 
-	Better tech, better life and better results.
+	Better tech, better life. Better objects and better results.
