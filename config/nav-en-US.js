@@ -1,6 +1,29 @@
 module.exports = [
   { text: 'Status', link: '/status/' },
-  { text: 'Wiki', link: 'https://airdb-wiki.github.io#outboundlink' },
+  {
+    text: 'Links',
+    items: [
+      {
+        text: 'Wiki',
+        items: [
+  	  { text: 'Wiki', link: 'https://airdb-wiki.github.io#outboundlink' },
+          { text: 'Interview', link: 'https://airdb.dev/interview/'},
+        ],
+        text: 'Developer',
+        items: [
+  	  { text: 'Slack', link: 'https://airdb-com.slack.com/' },
+  	  { text: 'Github', link: 'https://github.com/airdb' },
+        ]
+      },
+      {
+        text: 'Github',
+        items: [
+          {text: 'Init', link: 'https://www.airdb.com/init/', rel:''},
+          {text: 'Tensorflow', link: '/tf-go/'},
+        ]
+      },
+    ]
+  },
   {
     text: 'Guide',
     items: [
