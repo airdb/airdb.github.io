@@ -2,8 +2,8 @@
 home: true
 heroText: Builder
 heroImage:
-actionText: Get Started →
-actionLink: /en/guide/
+actionText: Jion Slack →
+actionLink: https://airdb-com.slack.com/
 features:
 - title: Thought
   details: Changing thoughts with others, and respecting to industry leaders.

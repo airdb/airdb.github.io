@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage:
-actionText: 了解我们 →
-actionLink: /zh/guide/
+actionText: Jion Slack →
+actionLink: https://airdb-com.slack.com/
 features:
 - title: 思想
   details:
