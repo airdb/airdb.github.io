@@ -28,10 +28,9 @@ Make a difference in the world.
 	Every should be done even if it is simple.
 	Just do it.
 
-- <font size=6 color=#F3716E> I: International </font>
+- <font size=6 color=#F3716E> I: Integrity </font>
 
-	To make something international
-	Global views.
+	being honest and showing a consistent and uncompromising adherence to strong moral and ethical principles and values.
 
 - <font size=6 color=#F3716E>  R: Repeat </font>
 
@@ -39,7 +38,7 @@ Make a difference in the world.
 	But not repeat what you do now.
 
 
-- <font size=6 color=#F3716E> D: define </font>
+- <font size=6 color=#F3716E> D: Definition </font>
 
 	Define something by our actions, thoughts.
 
