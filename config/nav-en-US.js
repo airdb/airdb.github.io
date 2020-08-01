@@ -1,8 +1,14 @@
 module.exports = [
   { text: 'Status', link: '/status/' },
   {
-    text: 'Links',
+    text: 'Links & Lab',
     items: [
+      {
+        text: 'Lab',
+        items: [
+  	  { text: 'Courses', link: 'https://lab.github.com/airdb' },
+        ]
+      },
       {
         text: 'Wiki',
         items: [
