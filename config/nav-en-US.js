@@ -1,4 +1,5 @@
 module.exports = [
+  { text: 'Guide', link: 'https://airdb.github.io/howto/' },
   { text: 'Status', link: '/status/' },
   {
     text: 'Links & Lab',
@@ -21,17 +22,6 @@ module.exports = [
         items: [
   	  { text: 'Slack', link: 'https://airdb-com.slack.com/' },
   	  { text: 'Github', link: 'https://github.com/airdb' },
-        ]
-      },
-    ]
-  },
-  {
-    text: 'Guide',
-    items: [
-      {
-        text: 'Overview',
-        items: [
-          {text: 'Introduction', link: '/en/guide/'},
         ]
       },
     ]

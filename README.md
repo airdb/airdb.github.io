@@ -2,8 +2,8 @@
 home: true
 heroText: Builder
 heroImage:
-actionText: Jion Slack →
-actionLink: https://airdb-com.slack.com/
+actionText: Get Started→
+actionLink: https://airdb.github.io/howto/
 features:
 - title: Thought
   details: Changing thoughts with others, and respecting to industry leaders.
@@ -20,29 +20,3 @@ footer: MIT Licensed | Copyright © 2015-present airdb.
 # Hello.
 
 Make a difference in the world.
-
-- <font size=6 color=#F3716E> A: Action</font>
-
-
-	Do not say easy to anytime.
-	Every should be done even if it is simple.
-	Just do it.
-
-- <font size=6 color=#F3716E> I: Integrity </font>
-
-	being honest and showing a consistent and uncompromising adherence to strong moral and ethical principles and values.
-
-- <font size=6 color=#F3716E>  R: Repeat </font>
-
-	Retry, research or re-do some thing or tasks.
-	But not repeat what you do now.
-
-
-- <font size=6 color=#F3716E> D: Definition </font>
-
-	Define something by our actions, thoughts.
-
-
-- <font size=6 color=#F3716E>  B: Better </font>
-
-	Better tech, better life. Better objects and better results.

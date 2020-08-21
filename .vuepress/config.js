@@ -14,7 +14,7 @@ module.exports = {
     '/': {
       lang: 'en-US',
       title: 'Airdb',
-      description : 'Better Tech, Better Life.',
+      description : 'Better Tech Better Life',
     },
     '/zh': {
       lang: 'zh-CN',
