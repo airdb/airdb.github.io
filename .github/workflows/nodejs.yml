@@ -22,7 +22,7 @@ jobs:
         npm install -g vuepress
         npm install
         npm run build --if-present
-        cp -pr ./.vuepress/airdb ./.vuepress/dist
+        cp -pr ./.vuepress/public/airdb ./.vuepress/dist
         cd ./.vuepress/dist
         echo 'airdb.io' > CNAME
         git init
