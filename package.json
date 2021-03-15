@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "Dean",
   "license": "ISC",
-  "dependencies": {
-    "vuepress": "^1.1.0"
+  "devDependencies": {
+    "vuepress": "^1.8.2"
   }
 }
