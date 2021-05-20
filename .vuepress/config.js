@@ -3,7 +3,18 @@ const path = require('path')
 module.exports = {
   clientRootMixin: path.resolve(__dirname, 'mixin.js'),
   head: [
-	['link', {rel: 'icon', href: `/favicon.ico`}]
+	['link', {rel: 'icon', href: `/favicon.ico`}],
+	// 添加百度统计
+	[ "script", {}, `
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?ffdf74557bfef9ba536a7ee22b88f401";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		`
+	],
   ],
   markdown: {
     externalLinkSymbol: false,
