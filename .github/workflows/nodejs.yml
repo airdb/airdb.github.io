@@ -25,7 +25,7 @@ jobs:
         cp -pr ./.vuepress/public/airdb ./.vuepress/dist
         cd ./.vuepress/dist
         echo 'airdb.io' > CNAME
-        git init
+        git init -b main
         git config user.name "airdb-bot"
         git config user.email "airdb-bot@airdb.com"
         git add -A
