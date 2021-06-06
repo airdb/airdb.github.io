@@ -29,6 +29,7 @@ jobs:
         git config user.name "airdb-bot"
         git config user.email "airdb-bot@airdb.com"
         git add -A
+
         git commit -m "Auto Update by actions"
         git push --force "https://${{ secrets.GithubBotToken }}@github.com/${GITHUB_REPOSITORY}" main
       env:
