@@ -17,7 +17,8 @@ export const navbarEn: NavbarConfig = [
   {
     text: 'Pricing',
     children: [
-          { text: 'Intro', link: '/en/pricing.md', },
+      { text: 'pricing', link: '/en/pricing.md', },
+      { text: 'StatusPage', link: 'https://airdb.statuspage.io/', },
     ],
   },
   {

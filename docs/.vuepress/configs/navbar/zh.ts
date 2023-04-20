@@ -17,7 +17,8 @@ export const navbarZh: NavbarConfig = [
   {
     text: '定价',
     children: [
-          { text: 'Intro', link: '/zh/pricing.md', },
+          { text: '价格', link: '/zh/pricing.md', },
+          { text: '服务状态', link: 'https://airdb.statuspage.io/', },
     ],
   },
   {
