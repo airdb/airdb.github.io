@@ -1,7 +1,6 @@
-.vuepress/dist
-.vuepress/dist/*
-node_modules/*
-*.log
-.idea/*
-package-lock.json
-
+node_modules
+.temp
+.cache
+dist
+.vscode
+.DS_Store

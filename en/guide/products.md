@@ -1,3 +1,0 @@
-# Products
-
-## Lab College

@@ -1,5 +1,0 @@
-# Organization
-
-## Teams
-
-test
