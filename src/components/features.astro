@@ -1,0 +1,64 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Easy to Use",
+    description: "",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Open Ecosystem",
+    description: "",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "AI Empowerment",
+    description: "",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "Free to Leave",
+    description: "",
+    icon: "bx:bxs-bot",
+  },
+  {
+    title: "Technical Babysitter",
+    description: "",
+    icon: "bx:bxs-file-find",
+  },
+  {
+    title: "Community",
+    description: "",
+    icon: "bx:bxs-user",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Why do you choose us?
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    AIRDB is your business intelligence assistant! We are trying to help our
+    clients or partners to connect/grow their business and make their life
+    easier.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
