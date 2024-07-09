@@ -7,30 +7,30 @@
 
   "starterKit": {
     "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
+    "description": "Best option for your website - small scale uses",
+    "price": "99",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "Standard support",
+      "One-stop IT or website hosting solution",
+      "Access to empower your business with AI tools"
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
+    "name": "Professional Technical Adviser",
     "description": "Best for large scale uses",
-    "price": "89",
+    "price": "9,999",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Premium tool selection",
       "Priority support",
+      "Premium services selection - Expert to CTO level",
       "Exclusive content & deals",
-      "Bulk order discounts"
+      "High-level security & compliance technical solutions"
     ],
     "purchaseBtnTitle": "Get the Professional Toolbox",
     "purchaseLink": "#"
