@@ -11,9 +11,9 @@ import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
 import heroImage from "@images/hero-image.avif";
-import faqs from "@data/faqs.json";
-import features from "@data/features.json";
-import pricing from "@data/pricing.json";
+import faqs from "@data/zh-cn/faqs.json";
+import features from "@data/zh-cn/features.json";
+import pricing from "@data/zh-cn/pricing.json";
 import featureImage from "@images/features-image.avif";
 import construction from "@images/construction-image.avif";
 import tools from "@images/automated-tools.avif";
@@ -35,12 +35,12 @@ const avatarSrcs: Array<string> = [
   />
 
   <HeroSection
-    title=`AI Copilot Company - <span
+    title=`我们是谁 - <span
         class="text-yellow-500 dark:text-yellow-400">Airdb</span>`
-    subTitle="AIRDB is an AI inside (Based on AI) company that provides a wide range of services. We are trying to use ABCDS (AI, Blockchain, Cloud, Data, Secuirty) technologies to help clients to solve real-world problems."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
+    subTitle="AIRDB 定位是一家人工智能创业公司，基于 《Empower Buisness intelligence with AI inside》 的理念，使用 ABCDS (AI, Blockchain, Cloud, Data, Secuirty) 技术，为客户提供广泛专业的软件服务，帮助客户解决现实业务问题，创造商业价值。"
+    primaryBtn="开始探索"
+    primaryBtnURL="/zh-cn/products"
+    secondaryBtn="联系销售"
     secondaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}
@@ -57,18 +57,18 @@ const avatarSrcs: Array<string> = [
   />
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At Airdb, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="为什么选择我们"
+    subTitle="满足行业需求！在 Airdb，我们解决 AI 和基础软件中遇到的独特挑战。从尖端工具到专业服务，我们致力于帮助您克服障碍，实现业务目标。"
     src={featureImage}
     alt="ScrewFast products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`定制 <span class="text-yellow-500 dark:text-yellow-400">AI Copilot</span> 系统，完美构建您的商业智能。`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "顶尖的工具",
         content:
           "Empower your projects with Airdb's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
         svg: "tools",
@@ -77,7 +77,7 @@ const avatarSrcs: Array<string> = [
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "直观的仪表盘",
         content:
           "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
         svg: "dashboard",
@@ -86,7 +86,7 @@ const avatarSrcs: Array<string> = [
         second: true,
       },
       {
-        heading: "Robust Features",
+        heading: "强大的项目管理",
         content:
           "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
         svg: "house",
@@ -98,12 +98,12 @@ const avatarSrcs: Array<string> = [
 
   <TestimonialsSection
     title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
+    subTitle="At Airdb, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
     ;
     testimonials={[
       {
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
+          "Airdb dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
         author: "Samantha Ruiz",
         role: "Chief Operating Officer | ConstructIt Inc.",
         avatarSrc:
@@ -138,8 +138,8 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="With airdb's higher technologies, you can grow faster and more stable within a secure network."
+    title="携手共建"
+    subTitle="借助 airdb 的高级技术，您可以在智能和稳定的安全网络中更快地发展。"
     url="https://github.com/airdb"
   />
 </MainLayout>
