@@ -11,16 +11,16 @@ const footerLinks = [
   {
     section: "Écosystème",
     links: [
-      { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
+      { name: "Documentation", url: "/zh-cn/welcome-to-docs/" },
+      { name: "Outils et Équipements", url: "/zh-cn/products" },
+      { name: "Services de Construction", url: "/zh-cn/services" },
     ],
   },
   {
     section: "Société",
     links: [
       { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/fr/blog" },
+      { name: "Blog", url: "/zh-cn/blog" },
       { name: "Carrières", url: "#" },
       { name: "Clients", url: "#" },
     ],
@@ -29,7 +29,7 @@ const footerLinks = [
 
 const socialLinks = {
   facebook: "#",
-  x: "#",
+  x: "https://x.com/xairdb",
   github: "https://github.com/airdb",
   google: "#",
   slack: "#",
