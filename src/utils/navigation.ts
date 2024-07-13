@@ -12,8 +12,8 @@ const footerLinks = [
     section: "Ecosystem",
     links: [
       { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Products & Tools", url: "/products" },
+      { name: "Consultation Services", url: "/services" },
     ],
   },
   {
@@ -28,9 +28,9 @@ const footerLinks = [
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
+  facebook: "https://www.facebook.com/xairdb/",
+  x: "https://x.com/xairdb",
+  github: "https://github.com/airdb",
   google: "https://www.google.com/",
   slack: "https://slack.com/",
 };

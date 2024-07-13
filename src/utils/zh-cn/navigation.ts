@@ -9,30 +9,30 @@ const navBarLinks = [
 
 const footerLinks = [
   {
-    section: "Écosystème",
+    section: "生态系统",
     links: [
-      { name: "Documentation", url: "/zh-cn/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/zh-cn/products" },
-      { name: "Services de Construction", url: "/zh-cn/services" },
+      { name: "文档", url: "/zh-cn/welcome-to-docs/" },
+      { name: "产品", url: "/zh-cn/products" },
+      { name: "技术咨询服务", url: "/zh-cn/services" },
     ],
   },
   {
-    section: "Société",
+    section: "公司",
     links: [
-      { name: "À propos de nous", url: "#" },
-      { name: "Blog", url: "/zh-cn/blog" },
-      { name: "Carrières", url: "#" },
-      { name: "Clients", url: "#" },
+      { name: "关于我们", url: "#" },
+      { name: "博客", url: "/zh-cn/blog" },
+      { name: "招聘", url: "#" },
+      { name: "客户", url: "#" },
     ],
   },
 ];
 
 const socialLinks = {
-  facebook: "#",
+  facebook: "https://www.facebook.com/xairdb/",
   x: "https://x.com/xairdb",
   github: "https://github.com/airdb",
   google: "#",
-  slack: "#",
+  discord: "#",
 };
 
 export default {
