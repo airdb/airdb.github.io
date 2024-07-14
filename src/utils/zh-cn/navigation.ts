@@ -32,6 +32,7 @@ const socialLinks = {
   x: "https://x.com/xairdb",
   github: "https://github.com/airdb",
   google: "#",
+  slack: "#",
   discord: "#",
 };
 
