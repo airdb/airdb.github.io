@@ -11,7 +11,10 @@ interface Props {
   id?: string;
 }
 
-const placeholder = Astro.currentLocale === "fr" ? "Entrez votre email" : "Enter your email";
+const placeholder =
+  Astro.currentLocale === "zh-CN"
+    ? "your_name@example.com"
+    : "your_name@example.com";
 ---
 
 <div

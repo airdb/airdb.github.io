@@ -3,6 +3,7 @@ const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Products", url: "/products" },
   { name: "Services", url: "/services" },
+  { name: "Consulting", url: "/consulting" },
   { name: "Blog", url: "/blog" },
   { name: "Contact", url: "/contact" },
 ];
@@ -33,6 +34,7 @@ const socialLinks = {
   github: "https://github.com/airdb",
   google: "https://www.google.com/",
   slack: "https://slack.com/",
+  discord: "https://discord.com/",
 };
 
 export default {

@@ -1,3 +1,5 @@
+import { paths } from "node_modules/@astrojs/starlight/utils/routing";
+
 export const Icons = {
   groups: {
     paths: [
@@ -335,6 +337,20 @@ export const Icons = {
     fill: "currentColor",
     title: "Slack",
   },
+  discordFooter: {
+    paths: [
+      {
+        // generated discord icon
+        d:"M14.55 40.17c3.53 2.67 8.86 5.46 17.45 5.46s13.92-2.79 17.45-5.46",
+      },
+    ],
+    class:
+      "h-4 w-4 flex-shrink-0 fill-current text-neutral-700 dark:text-neutral-400",
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    title: "Discord",
+  },
+        
   quotation: {
     paths: [
       {
