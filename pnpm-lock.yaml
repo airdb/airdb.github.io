@@ -30,8 +30,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0
       '@preline/collapse':
-        specifier: ^2.3.0
-        version: 2.3.0
+        specifier: ^2.4.0
+        version: 2.4.0
       '@preline/dropdown':
         specifier: ^2.3.0
         version: 2.3.0
@@ -660,8 +660,8 @@ packages:
   '@preline/accordion@2.3.0':
     resolution: {integrity: sha512-i62TZq1xa0tFQSQN/4s+owLPli1TPohD312FZGc6/qF4w2/Z4cXzqCwbkfiZER2YRFTIm/cn8tGQJ25d00AFkg==}
 
-  '@preline/collapse@2.3.0':
-    resolution: {integrity: sha512-M3Ku1Pj7uezqflQiIe2KgsCFNZqFB44GowmsZRe0ItB2/OGC6hO0rHBEMZEf30CZeYPbsU06DleQ6QEYs7ujxg==}
+  '@preline/collapse@2.4.0':
+    resolution: {integrity: sha512-SpB4XmD73yW1hG6TZvY0hGdlVrHVcxxxQoI+mziQeO/CEv6LIjJdE4QEHENsj5ZmBl+u/CsWpJG11sbE6tYXVw==}
 
   '@preline/dropdown@2.3.0':
     resolution: {integrity: sha512-tLcQS3Lzhmu7hW3XJVE2hSxe3b7pgtPtbKS3KanBOLTIDXu4XjFt45enolCYnsn64tOEsfhGnix/VNTo4kttyw==}
@@ -3533,7 +3533,7 @@ snapshots:
 
   '@preline/accordion@2.3.0': {}
 
-  '@preline/collapse@2.3.0': {}
+  '@preline/collapse@2.4.0': {}
 
   '@preline/dropdown@2.3.0': {}
 
