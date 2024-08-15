@@ -77,13 +77,12 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
+          heading="Contact us by email"
+          content="Prefer the written word? Drop us an email at"
           isLinkVisible={true}
-          linkTitle="Visit guides & tutorials"
+          linkTitle="support@airdb.cn"
           linkURL="#"
-          isArrowVisible={true}
-          ><Icon name="question" />
+          ><Icon name="envelopeOpen" />
         </ContactIconBlock>
 
         <ContactIconBlock
@@ -91,9 +90,19 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           content="Explore our FAQ for quick, clear answers to common queries."
           isLinkVisible={true}
           linkTitle="Visit FAQ"
-          linkURL="#"
+          linkURL="https://airdb.wiki/faq"
           isArrowVisible={true}
           ><Icon name="chatBubble" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Knowledgebase"
+          content="Browse through all of our knowledgebase articles."
+          isLinkVisible={true}
+          linkTitle="Visit guides & tutorials"
+          linkURL="https://airdb.wiki/"
+          isArrowVisible={true}
+          ><Icon name="question" />
         </ContactIconBlock>
 
         <ContactIconBlock
@@ -102,15 +111,6 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
           isAddressVisible={true}
           addressContent="3 Phillip St, #19-02 ROYAL GROUP BUILDING, Singapore 048693"
           ><Icon name="mapPin" />
-        </ContactIconBlock>
-
-        <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
-          isLinkVisible={true}
-          linkTitle="support@airdb.cn"
-          linkURL="#"
-          ><Icon name="envelopeOpen" />
         </ContactIconBlock>
       </div>
     </div>
