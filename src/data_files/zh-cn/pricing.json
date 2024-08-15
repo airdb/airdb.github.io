@@ -6,14 +6,15 @@
   "btnText": "Get a Custom Quote",
 
   "starterKit": {
-    "name": "网站托管套餐",
+    "name": "基础最小套餐",
     "description": "小规模企业的最佳选择",
     "price": "99",
     "cents": ".00",
     "billingFrequency": "USD / 月",
     "features": [
       "标准的支持",
-      "一站式 IT 或网站托管解决方案",
+      "一站式企业 IT 服务",
+      "网站托管解决方案",
       "使用 AI 工具增强您的业务"
     ],
     "purchaseBtnTitle": "立刻托管",
@@ -23,12 +24,12 @@
   "professionalToolbox": {
     "name": "专业技术顾问",
     "description": "适合大规模企业选择",
-    "price": "9,999",
+    "price": "999",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
       "高优先级支持",
-      "优质的专家团队提供服务 - 从专家到首席技术官级别",
+      "提供 CTO/CIO/CISO/DPO 等高级人才服务",
       "独家内容和优惠",
       "高水准的安全与合规技术解决方案"
     ],

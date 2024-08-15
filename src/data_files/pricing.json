@@ -6,14 +6,15 @@
   "btnText": "Get a Custom Quote",
 
   "starterKit": {
-    "name": "Starter Kit",
+    "name": "Basic Service",
     "description": "Best option for your website - small scale uses",
     "price": "99",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
       "Standard support",
-      "One-stop IT or website hosting solution",
+      "One-stop Corporatec IT services",
+      "website hosting solution",
       "Access to empower your business with AI tools"
     ],
     "purchaseBtnTitle": "Get the Starter Kit",
@@ -23,12 +24,12 @@
   "professionalToolbox": {
     "name": "Professional Technical Adviser",
     "description": "Best for large scale uses",
-    "price": "9,999",
+    "price": "999",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
     "features": [
-      "Priority support",
-      "Premium services selection - Expert to CTO level",
+      "Premium priority support",
+      "CTO/CIO/CISO/DPO as a service",
       "Exclusive content & deals",
       "High-level security & compliance technical solutions"
     ],
