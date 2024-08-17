@@ -49,7 +49,7 @@ const articles: Article[] = [
     isRightSection: false,
     title: "Transforming Designs into Reality",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, airdb offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
     img: beforeAfter,
     imgAlt: "Construction site before and after",
     btnExists: true,
@@ -60,7 +60,7 @@ const articles: Article[] = [
     isRightSection: true,
     title: "Navigating Projects with Professional Oversight",
     subTitle:
-      "Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Effective project management is at the heart of any successful build. airdb provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
     single: false,
     imgOne: constructionWorkers,
     imgOneAlt: "Construction workers orchestrating a project",
@@ -71,7 +71,7 @@ const articles: Article[] = [
     isRightSection: false,
     title: "Ensuring Long-lasting Performance",
     subTitle:
-      "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Our commitment to your project doesn't end at completion. airdb offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
@@ -80,7 +80,7 @@ const articles: Article[] = [
     isRightSection: true,
     title: "Crafting Bespoke Strategies for Unique Challenges",
     subTitle:
-      "For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "For our larger enterprise clients, airdb offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
     single: false,
     imgOne: progressBuilding,
     imgOneAlt: "In progress building structure",
@@ -100,23 +100,25 @@ const pageTitle: string = `Services | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk/services",
-    "url": "https://screwfast.uk/services",
-    "name": "Expert Consultation Services | ScrewFast",
-    "description": "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
-    "isPartOf": {
-        "@type": "WebSite",
-        "url": "https://screwfast.uk",
-        "name": "ScrewFast",
-        "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+    "@id": "https://airdb.com/services",
+    url: "https://airdb.com/services",
+    name: "Expert Consultation Services | airdb",
+    description:
+      "Uniting expertise with your vision, airdb provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://airdb.com",
+      name: "airdb",
+      description:
+        "airdb offers top-tier hardware tools and expert construction services to meet all your project needs.",
     },
-    "inLanguage": "en-US"
+    inLanguage: "en-US",
   }}
 >
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
     title="Uniting Expertise with Your Vision"
-    subTitle="At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
+    subTitle="At airdb, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
     btnExists={true}
     btnTitle="Schedule a Consultation"
     btnURL="#"
@@ -130,7 +132,7 @@ const pageTitle: string = `Services | ${SITE.title}`;
   If 'single' is true, it displays one image, otherwise it displays two.
   -->
   {
-    articles.map(article => {
+    articles.map((article) => {
       return article.isRightSection ? (
         <RightSection
           title={article.title}
@@ -160,9 +162,9 @@ const pageTitle: string = `Services | ${SITE.title}`;
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
     title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At airdb, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
     mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with ScrewFast as exceptional"
+    mainStatSubTitle="of our clients rate their experience with airdb as exceptional"
     stats={[
       {
         stat: "99.8%",
