@@ -53,8 +53,8 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
                 name="hs-firstname-contacts"
               />
             </div>
-            <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
+            <EmailContactInput id="hs-email-contacts" label="邮箱" />
+            <PhoneInput id="hs-phone-number" label="电话" />
             <TextAreaInput
               id="hs-about-contacts"
               label="详细内容"
@@ -77,8 +77,8 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
       <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
         <ContactIconBlock
-          heading="Contact us by email"
-          content="Prefer the written word? Drop us an email at"
+          heading="通过电子邮件联系我们"
+          content="更喜欢书面文字？给我们发电子邮件"
           isLinkVisible={true}
           linkTitle="support@airdb.cn"
           linkURL="#"
@@ -87,7 +87,7 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
 
         <ContactIconBlock
           heading="FAQ"
-          content="Explore our FAQ for quick, clear answers to common queries."
+          content="查看我们的常见问题解答。"
           isLinkVisible={true}
           linkTitle="Visit FAQ"
           linkURL="https://airdb.wiki/faq"
@@ -96,8 +96,8 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Knowledgebase"
-          content="Browse through all of our knowledgebase articles."
+          heading="知识库"
+          content="浏览我们的所有知识库文章。"
           isLinkVisible={true}
           linkTitle="Visit guides & tutorials"
           linkURL="https://airdb.wiki/"
@@ -106,7 +106,7 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visit our office"
+          heading="访问办公室"
           content="Singapore Airdb"
           isAddressVisible={true}
           addressContent="3 Phillip St, #19-02 ROYAL GROUP BUILDING, Singapore 048693"
