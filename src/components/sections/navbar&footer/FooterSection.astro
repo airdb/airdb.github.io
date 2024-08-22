@@ -20,6 +20,11 @@ const sectionThreeContent: string =
     : "Stay updated with the latest tools and exclusive deals.";
 const crafted: string =
   Astro.currentLocale === "fr" ? "Fabriqué par" : "Crafted by";
+
+const sectionBeian: string =
+  Astro.currentLocale === "zh-CN"
+    ? "浙ICP备2023010383号-5"
+    : "Copyright by Airdb All rights reserved";
 ---
 
 <footer class="w-full bg-neutral-300 dark:bg-neutral-900">
@@ -93,7 +98,7 @@ const crafted: string =
             class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
             href="https://beian.miit.gov.cn/#/Integrated/index"
             target="_blank"
-            rel="noopener noreferrer">浙ICP备2023010383号-5</a
+            rel="noopener noreferrer">{sectionBeian}</a
           >
         </div>
       </div>
