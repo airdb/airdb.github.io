@@ -29,12 +29,12 @@ const footerLinks = [
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/xairdb/",
-  x: "https://x.com/xairdb",
   github: "https://github.com/airdb",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
-  discord: "https://discord.com/",
+  wiki: "https://airdb.wiki",
+  facebook: "https://www.facebook.com/xairdb/",
+  discord: "https://discord.com/invite/Mp4xttEqnF",
+  linkedin: "https://www.linkedin.com/company/xairdb",
+  x: "https://x.com/xairdb",
 };
 
 export default {

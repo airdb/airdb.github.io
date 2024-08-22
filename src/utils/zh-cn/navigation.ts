@@ -29,12 +29,12 @@ const footerLinks = [
 ];
 
 const socialLinks = {
-  facebook: "https://www.facebook.com/xairdb/",
-  x: "https://x.com/xairdb",
   github: "https://github.com/airdb",
-  google: "#",
-  slack: "#",
-  discord: "#",
+  wiki: "https://airdb.wiki",
+  facebook: "https://www.facebook.com/xairdb/",
+  discord: "https://discord.com/invite/Mp4xttEqnF",
+  linkedin: "https://www.linkedin.com/company/xairdb",
+  x: "https://x.com/xairdb",
 };
 
 export default {
