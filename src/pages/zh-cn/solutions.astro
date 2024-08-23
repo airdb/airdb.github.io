@@ -7,6 +7,8 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
+import solutionDesign from "@images/solutions/design.jpg";
+
 import blueprints from "@images/blueprints-image.avif";
 import personWorking from "@images/person-working.avif";
 import beforeAfter from "@images/before-after.avif";
@@ -93,6 +95,57 @@ const articles: Article[] = [
 ];
 
 const pageTitle: string = `Services | ${SITE.title}`;
+
+const categories = [
+  {
+    name: "Design",
+    href: "/courses/design/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg",
+  },
+  {
+    name: "Development",
+    href: "/courses/development/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg",
+  },
+  {
+    name: "Marketing",
+    href: "/courses/marketing/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg",
+  },
+  {
+    name: "IT and Software",
+    href: "/courses/it-and-software/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg",
+  },
+  {
+    name: "Personal Development",
+    href: "/courses/personal-development/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg",
+  },
+  {
+    name: "Business",
+    href: "/courses/business/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
+  },
+  {
+    name: "Photography",
+    href: "/courses/photography/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg",
+  },
+  {
+    name: "Music",
+    href: "/courses/music/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg",
+  },
+];
 ---
 
 <MainLayout
@@ -102,23 +155,30 @@ const pageTitle: string = `Services | ${SITE.title}`;
     "@type": "WebPage",
     "@id": "https://airdb.com/services",
     url: "https://airdb.com/services",
-    name: "Expert Consultation Services | ScrewFast",
+    name: "Expert Consultation Services | airdb",
     description:
-      "Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+      "Uniting expertise with your vision, airdb provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://airdb.com",
-      name: "ScrewFast",
+      name: "airdb",
       description:
         "airdb offers top-tier hardware tools and expert construction services to meet all your project needs.",
     },
     inLanguage: "en-US",
   }}
 >
+  <MainSection
+    title="解决方案"
+    subTitle="airdb 为您提供硬件和软件行业的卓越服务和全面解决方案，将专业知识与您的愿景相结合，从咨询到项目完成，全程陪跑，科技助力客户业务增长。 "
+    btnTitle="Service Scope"
+    btnURL="#"
+  />
+
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title="将专业知识与您的愿景相结合"
-    subTitle="airdb 为您提供硬件和软件行业的卓越服务和全面解决方案，从咨询到项目完成。"
+    title="绝对优势"
+    subTitle="软件工程是一个复杂的逻辑架构，它需要专业知识和技能才能更好的理解，故此我们采用了以下类似软件工程的思路。 以下使用建筑工程为例，来展示我们的优势。"
     btnTitle="Schedule a Consultation"
     btnURL="#"
   />
