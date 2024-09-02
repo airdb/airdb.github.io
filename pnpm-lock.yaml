@@ -60,8 +60,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       lenis:
-        specifier: ^1.1.10
-        version: 1.1.10
+        specifier: ^1.1.13
+        version: 1.1.13
       preline:
         specifier: ^2.4.1
         version: 2.4.1
@@ -1681,8 +1681,8 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  lenis@1.1.10:
-    resolution: {integrity: sha512-G3uM/qMYM953kwyIxVKhlUZdz/3C5X6W3oyKxhjtemAdWq3eYCc0gKNMRCN5HQk7u+notpQP6mFwtMEjU62odg==}
+  lenis@1.1.13:
+    resolution: {integrity: sha512-iny+vWwUHcZGbJz+p2I75H1muLBRZqSG7t04jnhA+CWOQDFL1vt9bsZDwPPtYEmYVVvqAdo5MbXVFzNOlbgUkQ==}
     peerDependencies:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
@@ -4767,7 +4767,7 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  lenis@1.1.10:
+  lenis@1.1.13:
     dependencies:
       '@darkroom.engineering/tempus': 0.0.46
 
