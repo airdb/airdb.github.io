@@ -79,8 +79,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.10)
       astro-vtbot:
-        specifier: ^1.8.7
-        version: 1.8.7
+        specifier: ^1.8.8
+        version: 1.8.8
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -858,8 +858,8 @@ packages:
   '@vscode/l10n@0.0.18':
     resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
 
-  '@vtbag/inspection-chamber@1.0.9':
-    resolution: {integrity: sha512-ahubZm5vsDeqVmeE58yMj1LV2xUBs64c53uCetTXIY6AhUmCaeMVeQvOITJ2s7Mj0wB3qY+6BnjZv+TQ+ssZoQ==}
+  '@vtbag/inspection-chamber@1.0.10':
+    resolution: {integrity: sha512-mDwha6zZzwfPULbQ4NuebnQIbRnqELcfW+dxsjc1K54aDLQjaVKjeQf+q9ZzQ/QNl+hdtufKSnXC/Uo4p/LzhA==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -951,8 +951,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.8.7:
-    resolution: {integrity: sha512-w+uvUMdxFmpiWIN+IARMdwiJGQ/MJRAXVoqrkmRa2acP5kGK6QDhKKolH5JuFYbRf2yXU0Dz9r5+ti4d89qy0w==}
+  astro-vtbot@1.8.8:
+    resolution: {integrity: sha512-oa+8CFgxrWz2qW1OhLaHZxe/GMPOrskKv2/wQOtaeYSDvM721wGmqyWlwdUNbya53GC03pfUSJ4Fscu1RFktPg==}
 
   astro@4.14.4:
     resolution: {integrity: sha512-gpHGyY9qVJg1WXD/0UFoV3cdGZifhmCkJ3fuYV1zUlh+lWbjEB7/cE+KoSvj6aXHJGyLuTbvWOoxZs2yAdnREw==}
@@ -3786,7 +3786,7 @@ snapshots:
 
   '@vscode/l10n@0.0.18': {}
 
-  '@vtbag/inspection-chamber@1.0.9': {}
+  '@vtbag/inspection-chamber@1.0.10': {}
 
   abbrev@1.1.1: {}
 
@@ -3868,9 +3868,9 @@ snapshots:
       astro: 4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)
       rehype-expressive-code: 0.35.6
 
-  astro-vtbot@1.8.7:
+  astro-vtbot@1.8.8:
     dependencies:
-      '@vtbag/inspection-chamber': 1.0.9
+      '@vtbag/inspection-chamber': 1.0.10
 
   astro@4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4):
     dependencies:
