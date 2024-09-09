@@ -79,8 +79,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.10)
       astro-vtbot:
-        specifier: ^1.8.7
-        version: 1.8.7
+        specifier: ^1.9.2
+        version: 1.9.2
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -858,8 +858,11 @@ packages:
   '@vscode/l10n@0.0.18':
     resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
 
-  '@vtbag/inspection-chamber@1.0.9':
-    resolution: {integrity: sha512-ahubZm5vsDeqVmeE58yMj1LV2xUBs64c53uCetTXIY6AhUmCaeMVeQvOITJ2s7Mj0wB3qY+6BnjZv+TQ+ssZoQ==}
+  '@vtbag/element-crossing@1.0.1':
+    resolution: {integrity: sha512-UgZZOyeof2zainGD9FYjVqkwK8gvsv8ABVC5YA1iSlyt39c+2Fz7WRGBHiE/9Vqb22DpZTqF87ArHqkxG7+Y9g==}
+
+  '@vtbag/inspection-chamber@1.0.11':
+    resolution: {integrity: sha512-Aq6+SY2EEhQcPvjBHU7rs4ziZfvBsjajoXweZ9FBVfQ0sOtrQJQn1Mo7N14muLCrgcXzsIEUb1gfYzuq14QjVg==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -951,8 +954,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.8.7:
-    resolution: {integrity: sha512-w+uvUMdxFmpiWIN+IARMdwiJGQ/MJRAXVoqrkmRa2acP5kGK6QDhKKolH5JuFYbRf2yXU0Dz9r5+ti4d89qy0w==}
+  astro-vtbot@1.9.2:
+    resolution: {integrity: sha512-JZJmW0opHd519xoVexC+G+a+3lQXqbMsMMSYNWHi/TaW/X9goZC33N7pmGyyUonoftg+L05S/yFcRyR0WAuemg==}
 
   astro@4.14.4:
     resolution: {integrity: sha512-gpHGyY9qVJg1WXD/0UFoV3cdGZifhmCkJ3fuYV1zUlh+lWbjEB7/cE+KoSvj6aXHJGyLuTbvWOoxZs2yAdnREw==}
@@ -3786,7 +3789,9 @@ snapshots:
 
   '@vscode/l10n@0.0.18': {}
 
-  '@vtbag/inspection-chamber@1.0.9': {}
+  '@vtbag/element-crossing@1.0.1': {}
+
+  '@vtbag/inspection-chamber@1.0.11': {}
 
   abbrev@1.1.1: {}
 
@@ -3868,9 +3873,10 @@ snapshots:
       astro: 4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)
       rehype-expressive-code: 0.35.6
 
-  astro-vtbot@1.8.7:
+  astro-vtbot@1.9.2:
     dependencies:
-      '@vtbag/inspection-chamber': 1.0.9
+      '@vtbag/element-crossing': 1.0.1
+      '@vtbag/inspection-chamber': 1.0.11
 
   astro@4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4):
     dependencies:
