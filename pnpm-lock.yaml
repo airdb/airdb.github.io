@@ -79,8 +79,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.10)
       astro-vtbot:
-        specifier: ^1.8.7
-        version: 1.8.7
+        specifier: ^1.10.3
+        version: 1.10.3
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -858,8 +858,17 @@ packages:
   '@vscode/l10n@0.0.18':
     resolution: {integrity: sha512-KYSIHVmslkaCDyw013pphY+d7x1qV8IZupYfeIfzNA+nsaWHbn5uPuQRvdRFsa9zFzGeudPuoGoZ1Op4jrJXIQ==}
 
-  '@vtbag/inspection-chamber@1.0.9':
-    resolution: {integrity: sha512-ahubZm5vsDeqVmeE58yMj1LV2xUBs64c53uCetTXIY6AhUmCaeMVeQvOITJ2s7Mj0wB3qY+6BnjZv+TQ+ssZoQ==}
+  '@vtbag/cam-shaft@1.0.0':
+    resolution: {integrity: sha512-PeSTNMD/faT+RlvYAoBhyLoiMS5fKszQiRFz4k6oJnWEaNZZRqbbm6w4jrFzYn0hEVVNx0d7ludHscBAcfD7EA==}
+
+  '@vtbag/element-crossing@1.0.1':
+    resolution: {integrity: sha512-UgZZOyeof2zainGD9FYjVqkwK8gvsv8ABVC5YA1iSlyt39c+2Fz7WRGBHiE/9Vqb22DpZTqF87ArHqkxG7+Y9g==}
+
+  '@vtbag/inspection-chamber@1.0.15':
+    resolution: {integrity: sha512-8Zk3VhwmI2WjrLpezZNoCOdVIzX/kQUjZDP4DAGii3x1L7cEZPKOsztl6y92Gt57a7+ex0bJKbTEg3gIaqSXQA==}
+
+  '@vtbag/turn-signal@1.0.2':
+    resolution: {integrity: sha512-7XVN1dOE1xMLOftGFCrhp0sRXU65erYyUQxacZmZDNyms6FauwI/Pu/+t6tZDs+BGSyam5Viwy0m6ZZbWiNsRg==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -951,8 +960,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.8.7:
-    resolution: {integrity: sha512-w+uvUMdxFmpiWIN+IARMdwiJGQ/MJRAXVoqrkmRa2acP5kGK6QDhKKolH5JuFYbRf2yXU0Dz9r5+ti4d89qy0w==}
+  astro-vtbot@1.10.3:
+    resolution: {integrity: sha512-DihmfPh4xDS1vp+JfYwyheyWrwUBtWOcziljBMJx2/wXMKMDso9DUVBvW9WQb+tSS6Y3FoSErHBA2YlZXO2Q7w==}
 
   astro@4.14.4:
     resolution: {integrity: sha512-gpHGyY9qVJg1WXD/0UFoV3cdGZifhmCkJ3fuYV1zUlh+lWbjEB7/cE+KoSvj6aXHJGyLuTbvWOoxZs2yAdnREw==}
@@ -3786,7 +3795,13 @@ snapshots:
 
   '@vscode/l10n@0.0.18': {}
 
-  '@vtbag/inspection-chamber@1.0.9': {}
+  '@vtbag/cam-shaft@1.0.0': {}
+
+  '@vtbag/element-crossing@1.0.1': {}
+
+  '@vtbag/inspection-chamber@1.0.15': {}
+
+  '@vtbag/turn-signal@1.0.2': {}
 
   abbrev@1.1.1: {}
 
@@ -3868,9 +3883,12 @@ snapshots:
       astro: 4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4)
       rehype-expressive-code: 0.35.6
 
-  astro-vtbot@1.8.7:
+  astro-vtbot@1.10.3:
     dependencies:
-      '@vtbag/inspection-chamber': 1.0.9
+      '@vtbag/cam-shaft': 1.0.0
+      '@vtbag/element-crossing': 1.0.1
+      '@vtbag/inspection-chamber': 1.0.15
+      '@vtbag/turn-signal': 1.0.2
 
   astro@4.14.4(rollup@4.21.0)(terser@5.31.6)(typescript@5.5.4):
     dependencies:
