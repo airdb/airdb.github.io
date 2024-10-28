@@ -79,8 +79,8 @@ importers:
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.4.14)
       astro-vtbot:
-        specifier: ^1.10.4
-        version: 1.10.4
+        specifier: ^1.10.5
+        version: 1.10.5
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -876,11 +876,11 @@ packages:
   '@vtbag/element-crossing@1.0.2':
     resolution: {integrity: sha512-2nTgDd2gvuwn4mouoXIaYwzB3pXySXAd/7842um/qmQYBLwns7nqHCc0d99Wgoi28KeYgQuWMP4ZR5vMqHz5ww==}
 
-  '@vtbag/inspection-chamber@1.0.16':
-    resolution: {integrity: sha512-90qz1rcIlrNyajH2HpDHYR/FiwsMQjTA8URgDtC0XZx1Ny2gpmSYSRVFzbGPt3qPD8A8fuGQS31IJa0h1fuSgw==}
+  '@vtbag/inspection-chamber@1.0.17':
+    resolution: {integrity: sha512-MDtO+qNtd4AkxjkJpQD3N2YhMQUaEdSkdArwk7Cy/81iMbOXhZek6cRQu06jn6JnrRv4andtb1oHtl5rYuNSSQ==}
 
-  '@vtbag/turn-signal@1.0.3':
-    resolution: {integrity: sha512-qa+dVrjJrg6LIcz22oI7X3QpS16qImZx/WscpMaghfpOF5pvHVH5O9zJkha5qxdqAELNm2gwk5O0+3q7I389yw==}
+  '@vtbag/turn-signal@1.1.0':
+    resolution: {integrity: sha512-2WoBbs3v7hWxu6BXvWab4G8MJIFr21vEcJ5Y4mhXlYifVzHLSf5M+aHxEEk62DMOeVmjHwqt8DK47GYnFrEqmg==}
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==}
@@ -973,8 +973,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.10.4:
-    resolution: {integrity: sha512-F/0D5i8PTytq7rS+ngtNRPMOC4AY7K7e5hZRjyjmhcEK1TYqDegeWkbUU6uSolChH+DSwyesLlIR8o7hV2PdTQ==}
+  astro-vtbot@1.10.5:
+    resolution: {integrity: sha512-1w5gviyjDn2bh8FGoK0bnULemLkQzkB4MzWUeUxs67u2ZfHaqc+R8O66ztjgSulr334N5RpRmuW11z6ciW+v2g==}
 
   astro@4.16.7:
     resolution: {integrity: sha512-nON+8MUEkWTFwXbS4zsQIq4t0Fs42eulM4x236AL+qNnWfqNAOOqAnFxO1dxfJ1q+XopIBbbT9Mtev+0zH47PQ==}
@@ -3833,11 +3833,11 @@ snapshots:
 
   '@vtbag/element-crossing@1.0.2': {}
 
-  '@vtbag/inspection-chamber@1.0.16':
+  '@vtbag/inspection-chamber@1.0.17':
     dependencies:
       eruda: 3.4.0
 
-  '@vtbag/turn-signal@1.0.3': {}
+  '@vtbag/turn-signal@1.1.0': {}
 
   abbrev@1.1.1: {}
 
@@ -3917,12 +3917,12 @@ snapshots:
       astro: 4.16.7(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3)
       rehype-expressive-code: 0.35.6
 
-  astro-vtbot@1.10.4:
+  astro-vtbot@1.10.5:
     dependencies:
       '@vtbag/cam-shaft': 1.0.1
       '@vtbag/element-crossing': 1.0.2
-      '@vtbag/inspection-chamber': 1.0.16
-      '@vtbag/turn-signal': 1.0.3
+      '@vtbag/inspection-chamber': 1.0.17
+      '@vtbag/turn-signal': 1.1.0
 
   astro@4.16.7(rollup@4.24.0)(terser@5.36.0)(typescript@5.6.3):
     dependencies:
