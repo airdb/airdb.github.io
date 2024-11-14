@@ -17,22 +17,22 @@ const product: CollectionEntry<"products">[] = (
   await getCollection("products")
 ).sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id,
+    a.data.main.id - b.data.main.id
 );
 
 // Define variables for page content
 const title: string = "Products";
 const subTitle: string =
-  "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.";
+  "Explore the innovation and reliability of AIRDB solutions, crafted to empower businesses in a digital-first world. From AI-driven automation to secure web services, each of our offerings is meticulously designed to enhance efficiency and deliver impactful results. Trust AIRDB to provide the technology and expertise you need to succeed in today’s competitive landscape.";
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
   // First testimonial data
   {
     content:
-      " \"Since switching to ScrewFast's hardware tools, the efficiency on our construction sites has skyrocketed. The durability of the hex bolts and precision of the machine screws are simply unmatched. It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
-    author: "Jason Clark",
-    role: "Site Foreman | TopBuild",
+      " \"Since switching to AIRDB's software tools, the efficiency on our construction sites has skyrocketed. They has completely changed the way our team works! The efficiency gains have been incredible.  It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
+    author: "Jason",
+    role: "CDN Comapny | Co-Founder",
     avatarSrc:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
     avatarAlt: "Image Description",
@@ -40,9 +40,9 @@ const testimonials = [
   // Second testimonial data
   {
     content:
-      " \"As an interior designer, I'm always looking for high-quality materials and tools that help bring my visions to life. ScrewFast's mixed screws assortment has been a game-changer for my projects, providing the perfect blend of quality and variety. The outstanding customer support was just the cherry on top!\" ",
-    author: "Maria Gonzalez",
-    role: "Interior Designer | Creative Spaces",
+      ' "With its commitment to excellence and forward-thinking approach, AIRDB is redefining how companies solve real-world challenges and unlock true commercial value."',
+    author: "Fangbin Lin",
+    role: "Baobei Huijia | Head of Volunteer",
     avatarSrc:
       "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
     avatarAlt: "Image Description",
@@ -50,11 +50,11 @@ const testimonials = [
   // Third testimonial data
   {
     content:
-      " \"I’ve been a professional carpenter for over 15 years, and I can sincerely say that ScrewFast’s tap bolts and nuts are some of the best I've used. They grip like no other, and I have full confidence in every joint and fixture. Plus, the service is impeccable – they truly care about my project's success.\" ",
-    author: "Richard Kim",
-    role: "Master Carpenter | WoodWright",
+      ' "AIRDB stands at the forefront of technological innovation, seamlessly integrating AI and advanced digital solutions to empower businesses with unparalleled intelligence and efficiency." ',
+    author: "Xiao Fang",
+    role: "Tangyi Food | Operations Manager",
     avatarSrc:
-      "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
+      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
     avatarAlt: "Image Description",
   },
 ];
@@ -68,16 +68,18 @@ const pageTitle: string = `Products | ${SITE.title}`;
     "@context": "https://schema.org",
     "@type": "WebPage",
     "@id": "https://screwfast.uk/products",
-    "url": "https://screwfast.uk/products",
-    "name": "Hardware Tools | ScrewFast",
-    "description": "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
-    "isPartOf": {
+    url: "https://screwfast.uk/products",
+    name: "Hardware Tools | ScrewFast",
+    description:
+      "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
+    isPartOf: {
       "@type": "WebSite",
-      "url": "https://screwfast.uk",
-      "name": "ScrewFast",
-      "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+      url: "https://screwfast.uk",
+      name: "ScrewFast",
+      description:
+        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
     },
-    "inLanguage": "en-US"
+    inLanguage: "en-US",
   }}
 >
   <div
@@ -117,12 +119,13 @@ const pageTitle: string = `Products | ${SITE.title}`;
   </div>
   <!--Features statistics section-->
   <FeaturesStatsAlt
-    title="Why Choose ScrewFast?"
-    subTitle="Transform your ideas into tangible results with ScrewFast tools. Whether you're starting with a sketch on a napkin or diving into a comprehensive construction project, our tools are engineered to help you build with confidence."
+    title="Why Choose AIRDB?"
+    subTitle="AIRDB combines industry-leading technology with personalized solutions to drive measurable success for your business."
+    ,
     benefits={[
-      "Robust and reliable tools for long-lasting performance.",
-      "Innovative solutions tailored to modern construction needs.",
-      "Customer support dedicated to your project's success.",
+      "Innovative Solutions: Cutting-edge AI, secure gateways, and automation tools tailored to meet modern business demands.",
+      "Proven Expertise: A dedicated team with deep industry knowledge, focused on delivering superior results.",
+      "Comprehensive Support: End-to-end services, from design and development to hosting and security, ensuring seamless operations.",
     ]}
   />
   <!--Testimonials section-->
