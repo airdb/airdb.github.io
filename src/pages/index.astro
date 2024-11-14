@@ -10,14 +10,15 @@ import TestimonialsSection from "@components/sections/testimonials/TestimonialsS
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@images/hero-image.avif";
+//import heroImage from "@images/hero-image.avif";
+import heroImage from "@images/social.png";
 import faqs from "@data/faqs.json";
 import features from "@data/features.json";
 import pricing from "@data/pricing.json";
 import featureImage from "@images/features-image.avif";
-import construction from "@images/construction-image.avif";
-import tools from "@images/automated-tools.avif";
-import dashboard from "@images/dashboard-image.avif";
+import construction from "@images/copilot-image-3.png";
+import tools from "@images/copilot-image-1.png";
+import dashboard from "@images/copilot-image-2.png";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -81,7 +82,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: "Intuitive Dashboards",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "Navigate with ease using Airdb's intuitive dashboards. Set up and oversee your application seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
         svg: "dashboard",
         src: dashboard,
         alt: "A screenshot or graphic representation of the intuitive dashboard",
@@ -90,7 +91,7 @@ const avatarSrcs: Array<string> = [
       {
         heading: "Robust Features",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Minimize complexity, maximize productivity. ensuring your business operates smoothly and efficiently. Designed with resilience and scalability in mind, these features provide the foundation for secure, efficient, and adaptable solutions that can grow alongside your needs.",
         svg: "house",
         src: construction,
         alt: "Gray metal building frame near tower crane during daytime",
@@ -140,8 +141,8 @@ const avatarSrcs: Array<string> = [
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="With airdb's higher technologies, you can grow faster with in a stable and secure network."
+    title="Learn. Build. Grow. Earn."
+    subTitle="With airdb's higher technologies, you can grow faster with in a stable and secure platform. Start today, and let’s build your path to success together."
     url="https://github.com/airdb"
   />
 </MainLayout>
