@@ -3,7 +3,7 @@ const navBarLinks = [
   { name: "首页", url: "/zh-cn" },
   { name: "产品", url: "/zh-cn/products" },
   { name: "解决方案", url: "/zh-cn/solutions" },
-  { name: "咨询", url: "/zh-cn/consulting" },
+  { name: "文档", url: "/zh-cn/welcome-to-docs/" },
   { name: "博客", url: "/zh-cn/blog" },
   { name: "联系我们", url: "/zh-cn/contact" },
 ];
