@@ -7,6 +7,8 @@ import RightSection from "@components/ui/blocks/RightSection.astro";
 import FeaturesStats from "@components/sections/features/FeaturesStats.astro";
 
 // Import necessary images
+import solutionDesign from "@images/solutions/design.jpg";
+
 import blueprints from "@images/blueprints-image.avif";
 import personWorking from "@images/person-working.avif";
 import beforeAfter from "@images/before-after.avif";
@@ -36,9 +38,9 @@ interface Article {
 const articles: Article[] = [
   {
     isRightSection: true,
-    title: "Delivering Expert Guidance",
+    title: "AI-Driven Intelligent Future",
     subTitle:
-      "Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.",
+      "Enhance operational efficiency and user experience through AI technology. 1. Personalized recommendations: Increase customer conversion rates. 2. Intelligent customer service: Quickly and accurately respond to customers. 3. Behavior prediction: Help businesses predict trends and optimize decisions. 4. Automated processes: Reduce repetitive tasks and focus on core business.",
     single: false,
     imgOne: blueprints,
     imgOneAlt: "Blueprints and digital tablet with construction plans.",
@@ -47,9 +49,9 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Transforming Designs into Reality",
+    title: "Enterprise-Level Digital Security",
     subTitle:
-      "Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, airdb offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.",
+      "Protect critical enterprise data and system security, ensuring business continuity. 1. Comprehensive feature extraction, AI detection and intelligent defense system. 2. Precise crawler attack, protecting digital assets. 3. 4A authentication system, protecting user data security. 4. Cloud security protection, ensuring business continuity.",
     img: beforeAfter,
     imgAlt: "Construction site before and after",
     btnExists: true,
@@ -58,9 +60,9 @@ const articles: Article[] = [
   },
   {
     isRightSection: true,
-    title: "Navigating Projects with Professional Oversight",
+    title: "Digital Transformation for Factories",
     subTitle:
-      "Effective project management is at the heart of any successful build. airdb provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.",
+      "Provide easy-to-use digital tools for small and medium-sized enterprises to quickly adapt to market changes. 1. One-stop management: Quickly build online stores and management platforms. 2. Marketing empowerment: Provide automated marketing and customer management tools.",
     single: false,
     imgOne: constructionWorkers,
     imgOneAlt: "Construction workers orchestrating a project",
@@ -69,18 +71,18 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Ensuring Long-lasting Performance",
+    title: "Cloud-Native Business Transformation",
     subTitle:
-      "Our commitment to your project doesn't end at completion. airdb offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
+      "Provide comprehensive support for enterprises migrating to cloud platforms, enhancing flexibility and efficiency. 1. Cloud architecture design: Provide optimal cloud solutions. 2. Automated operations: Optimize resources and reduce costs. 3. High availability: Ensure continuous operation of critical business.",
     img: usingTools,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
   {
     isRightSection: true,
-    title: "Crafting Bespoke Strategies for Unique Challenges",
+    title: "Data-Driven Business Growth",
     subTitle:
-      "For our larger enterprise clients, airdb offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.",
+      "Provide deeper business insights for enterprises through intelligent data management and analysis. 1. Data integration and storage: Build efficient data management systems. 2. Real-time data monitoring: Help enterprises seize market opportunities. 3. Data analysis and mining: Help enterprises discover potential value. 4. Data visualization: Present key data in a simple and intuitive way.",
     single: false,
     imgOne: progressBuilding,
     imgOneAlt: "In progress building structure",
@@ -93,12 +95,63 @@ const articles: Article[] = [
 ];
 
 const pageTitle: string = `Services | ${SITE.title}`;
+
+const categories = [
+  {
+    name: "Design",
+    href: "/courses/design/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg",
+  },
+  {
+    name: "Development",
+    href: "/courses/development/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg",
+  },
+  {
+    name: "Marketing",
+    href: "/courses/marketing/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg",
+  },
+  {
+    name: "IT and Software",
+    href: "/courses/it-and-software/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg",
+  },
+  {
+    name: "Personal Development",
+    href: "/courses/personal-development/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg",
+  },
+  {
+    name: "Business",
+    href: "/courses/business/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg",
+  },
+  {
+    name: "Photography",
+    href: "/courses/photography/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg",
+  },
+  {
+    name: "Music",
+    href: "/courses/music/",
+    image:
+      "https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg",
+  },
+];
 ---
 
 <MainLayout
   title={pageTitle}
   structuredData={{
-    "@context": "https://schema.org",
+    "@context": "https://airdb.com",
     "@type": "WebPage",
     "@id": "https://airdb.com/services",
     url: "https://airdb.com/services",
@@ -115,14 +168,22 @@ const pageTitle: string = `Services | ${SITE.title}`;
     inLanguage: "en-US",
   }}
 >
-  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="At airdb, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services."
-    btnExists={true}
+    title="Solutions"
+    subTitle="Airdb Intelligence provides you with excellent services and comprehensive solutions in the hardware and software industry, combining expertise with your vision, from consultation to project completion, accompanying you throughout the process, and using technology to drive customer business growth. Intelligent data drives growth."
+    btnTitle="Service Scope"
+    btnURL="#"
+  />
+
+  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
+  <!--
+  <MainSection
+    title="Absolute Advantage"
+    subTitle="Software engineering is a complex logical architecture that requires expertise and skills to better understand. Therefore, we adopt the following software engineering-like approach. The following uses construction engineering as an example to demonstrate our advantages."
     btnTitle="Schedule a Consultation"
     btnURL="#"
   />
+  -->
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
   The 'btnExists' property is used to toggle the display of a button in these sections.
@@ -161,22 +222,22 @@ const pageTitle: string = `Services | ${SITE.title}`;
   }
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
-    title="By the Numbers"
-    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At airdb, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    title="Service Data"
+    subTitle="Our commitment to quality and reliability is reflected in every project we undertake. At airdb, we provide excellent service to ensure your project runs smoothly."
     mainStatTitle="96%"
-    mainStatSubTitle="of our clients rate their experience with airdb as exceptional"
+    mainStatSubTitle="Our customers rate their experience with airdb as excellent"
     stats={[
       {
         stat: "99.8%",
-        description: "project completion rate",
+        description: "Project completion rate",
       },
       {
-        stat: "5,000+",
-        description: "successful installations",
+        stat: "100+",
+        description: "Projects successfully completed",
       },
       {
         stat: "85%",
-        description: "client growth year-over-year",
+        description: "Year-on-year customer growth rate",
       },
     ]}
   />
