@@ -1,7 +1,7 @@
 ---
 title: "The Impact of Sustainable Practices"
 description: "Discover how ScrewFast is leading the charge in promoting sustainability within the construction industry"
-cardImage: "@/images/insights/insight-3.avif"
+cardImage: "@/images/insights/insight-3.png"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
@@ -15,7 +15,7 @@ Imagine this: the construction industry is responsible for a staggering 36% of g
 
 ScrewFast is a company built on the foundation of responsibility. They understand the environmental cost of construction and are taking decisive action to change course. Their commitment to sustainability permeates every aspect of their operations, from the materials they use to the construction processes they implement.
 
-* **Material Innovation:** ScrewFast prioritizes the use of recycled and recyclable materials. This not only reduces reliance on virgin resources but also lessens the environmental burden associated with resource extraction. 
+* **Material Innovation:** ScrewFast prioritizes the use of recycled and recyclable materials. This not only reduces reliance on virgin resources but also lessens the environmental burden associated with resource extraction.
 * **Energy Efficiency:**  ScrewFast champions energy-efficient construction methods.  This might involve incorporating high-performance insulation materials, optimizing building design for natural light and ventilation, or even integrating renewable energy sources like solar panels.  The result?  Buildings that require less energy to operate, leading to a significant reduction in greenhouse gas emissions.
 * **Waste Reduction:**  ScrewFast meticulously plans and executes projects to minimize waste generation.  This can involve using prefabricated components, employing modular construction techniques, and implementing meticulous waste segregation and recycling programs.  By minimizing waste, ScrewFast conserves resources and reduces the environmental impact associated with landfills.
 * **Sustainable Sourcing:**  ScrewFast takes a responsible approach to sourcing its materials.  They prioritize working with suppliers who share their commitment to sustainability.  This ensures that the environmental footprint is considered throughout the entire supply chain.
@@ -24,7 +24,7 @@ ScrewFast is a company built on the foundation of responsibility. They understan
 
 ScrewFast's dedication to sustainable practices extends far beyond their company walls.  The ripple effect of their actions is substantial:
 
-* **Environmental Benefits:**  By promoting resource conservation, reduced energy consumption, and minimized waste, ScrewFast contributes significantly to a healthier planet.  This translates to cleaner air, a more stable climate, and the preservation of natural resources for future generations. 
+* **Environmental Benefits:**  By promoting resource conservation, reduced energy consumption, and minimized waste, ScrewFast contributes significantly to a healthier planet.  This translates to cleaner air, a more stable climate, and the preservation of natural resources for future generations.
 * **Economic Advantages:**  Sustainable construction practices often lead to long-term economic benefits.  Energy-efficient buildings have lower operational costs, and sustainable materials can sometimes be surprisingly cost-competitive.  ScrewFast demonstrates that being green can also be good for the bottom line.
 * **Social Responsibility:**  ScrewFast recognizes that sustainability encompasses more than just the environment.  They are committed to creating safe and healthy work environments for their employees and fostering positive relationships with the communities in which they operate.
 
@@ -34,4 +34,4 @@ ScrewFast isn't just talking the talk, they're walking the walk. Their commitmen
 
 ## The Road Ahead
 
-The construction industry is at a crossroads.  ScrewFast stands as a beacon, illuminating the path towards a more sustainable future.  By embracing innovative practices and prioritizing environmental responsibility, ScrewFast is not just building structures; they are building a better tomorrow.  As more companies follow suit, the impact will be profound. A greener construction industry signifies a healthier planet for all. 
+The construction industry is at a crossroads.  ScrewFast stands as a beacon, illuminating the path towards a more sustainable future.  By embracing innovative practices and prioritizing environmental responsibility, ScrewFast is not just building structures; they are building a better tomorrow.  As more companies follow suit, the impact will be profound. A greener construction industry signifies a healthier planet for all.

@@ -1,7 +1,7 @@
 ---
 title: "L'impact des pratiques durables"
 description: "Découvrez comment ScrewFast mène la charge en promouvant la durabilité dans l'industrie de la construction"
-cardImage: "@/images/insights/insight-3.avif"
+cardImage: "@/images/insights/insight-3.png"
 cardImageAlt: "Vue de dessus de l'agencement des outils mécaniques"
 ---
 
