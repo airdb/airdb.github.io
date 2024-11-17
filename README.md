@@ -1,10 +1,10 @@
 # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
-![ScrewFast](https://github.com/mearashadowfax/ScrewFast/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
+![ScrewFast](https://github.com/airdb/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
 
 ScrewFast is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, ScrewFast provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
 
-**[View Live Demo](https://screwfast.uk)**
+**[View Live Demo](https://airdb.com)**
 
 ## Table of Contents
 
@@ -111,7 +111,7 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 - [x] **Internationalization (i18n) Features**:
   - Integrates [Astro’s internationalization (i18n) features](https://docs.astro.build/en/guides/internationalization/).
   - Additionally, a custom LanguagePicker component has been developed to facilitate language selection.
-  - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/mearashadowfax/ScrewFast/tree/monolingual-site).
+  - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/airdb/tree/monolingual-site).
 
 - [x] **Dynamic Table of Contents (ToC) with Scroll Progress Indicator**:
   - Enhances ease of navigation in insight posts by highlighting the relevant section in the ToC, and includes a progress indicator to visually represent scroll progress.
@@ -123,7 +123,7 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 
 ### Bug Fixes
 
-- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/ScrewFast/issues).
+- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/airdb/issues).
 
 ## Getting Started
 
@@ -523,7 +523,7 @@ Structured data in JSON-LD format can be managed by the `Meta.astro` component, 
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "ScrewFast",
-    "url": "https://screwfast.uk",
+    "url": "https://airdb.com",
     "description": "Discover top-quality hardware tools and services"
   }}
 >
@@ -683,4 +683,4 @@ If you're interested in helping, you can contribute in several ways:
 
 ## License
 
-This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/ScrewFast/blob/main/LICENSE) file for more details.
+This project is released under the MIT License. Please read the [LICENSE](https://github.com/airdb/blob/main/LICENSE) file for more details.
