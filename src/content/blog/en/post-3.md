@@ -6,10 +6,10 @@ role: "Strategic Marketing Manager"
 authorImage: "@/images/blog/deancn.jpeg"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-18
-cardImage: "@/images/blog/post-3.avif"
+cardImage: "@/images/blog/post-3.png"
 cardImageAlt: "Side view worker wearing gloves"
 readTime: 3
-tags: ["procurement", "affordable", "efficiency"]
+tags: ["airdb", "AI Gateway", "AI ChatBot"]
 contents: [
    "In an increasingly interconnected and fast-paced digital landscape, businesses need tools that not only enhance efficiency but also simplify complex processes. AirDB has positioned itself as a leader in this arena by providing advanced solutions built on robust AI systems, secure infrastructure, and intelligent interfaces. Let’s explore how AirDB’s offerings—AI system architecture, Secure Gateway, and AI ChatBot—are transforming the way businesses operate.",
 

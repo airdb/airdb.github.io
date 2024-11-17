@@ -5,7 +5,7 @@ author: "dean"
 authorImage: "@/images/blog/deancn.jpeg"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-10
-cardImage: "@/images/blog/post-2.avif"
+cardImage: "@/images/blog/post-2.png"
 cardImageAlt: "Man in black sweatpants using DEWALT circular saw and cutting a wood plank"
 readTime: 5
 tags: ["airdb", "Built-in Intelligence", "AI Inside" ]

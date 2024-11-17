@@ -5,7 +5,7 @@ author: "dean"
 authorImage: "@/images/blog/deancn.jpeg"
 authorImageAlt: "Avatar Description"
 pubDate: 2024-02-06
-cardImage: "@/images/blog/post-1.avif"
+cardImage: "@/images/blog/post-1.png"
 cardImageAlt: "Top view mechanical tools arrangement"
 readTime: 4
 tags: ["Airdb", "AI First", "AI Inside", "AI-First", "AI-Inside"]
