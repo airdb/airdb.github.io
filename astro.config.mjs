@@ -10,7 +10,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://airdb.com",
   image: {
-    domains: ["images.unsplash.com"],
+    domains: ["airdb.com"],
   },
   // i18n: {
   //   defaultLocale: "en",
@@ -26,8 +26,8 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      debug: false,
       i18n: {
+        filter: (page) => !page.includes("404"),
         defaultLocale: "en", // All urls that don't contain `fr` after `https://airdb.com/` will be treated as default locale, i.e. `en`
         locales: {
           en: "en", // The `defaultLocale` value must present in `locales` keys
