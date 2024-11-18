@@ -26,8 +26,7 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
-      debug: true,
-      customPages: ['https://airdb.com/'],
+      debug: false,
       i18n: {
         defaultLocale: "en", // All urls that don't contain `fr` after `https://airdb.com/` will be treated as default locale, i.e. `en`
         locales: {

@@ -44,7 +44,7 @@ export const GET: APIRoute = async () => {
   );
 
   const manifest = {
-    short_name: "Airdb ",
+    short_name: "Airdb",
     name: "Airdb",
     icons,
     display: "minimal-ui",
