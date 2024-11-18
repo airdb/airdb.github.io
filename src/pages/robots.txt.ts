@@ -3,6 +3,10 @@ import type { APIRoute } from 'astro';
 
 const robotsTxt = `
 User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
 Disallow:
 Allow: /
 Crawl-delay: 10
@@ -18,7 +22,9 @@ Allow: /
 Crawl-delay: 2
 
 User-agent: *
-Disallow: /
+Disallow:
+Allow: /
+Crawl-delay: 10
 
 Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE).href}
 `.trim();
