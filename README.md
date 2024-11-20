@@ -305,7 +305,7 @@ export const footerLinks: FooterLinkSection[] = [
       { name: "About us", url: "/about" },
       { name: "Blog", url: "/blog" },
       { name: "Careers", url: "/careers" },
-      { name: "Customers", url: "/customers" },
+      { name: "Terms of Service", url: "/about/terms-of-service" },
     ],
   },
 ];

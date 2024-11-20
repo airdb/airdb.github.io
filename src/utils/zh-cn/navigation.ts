@@ -20,10 +20,10 @@ const footerLinks = [
   {
     section: "公司",
     links: [
-      { name: "关于我们", url: "#" },
-      { name: "博客", url: "/zh-cn/blog" },
+      { name: "服务条款", url: "/zh-cn/about/terms-of-service" },
+      { name: "隐私政策", url: "/zh-cn/about/privacy-policy" },
       { name: "招聘", url: "#" },
-      { name: "客户", url: "#" },
+      { name: "博客", url: "/zh-cn/blog" },
     ],
   },
 ];
