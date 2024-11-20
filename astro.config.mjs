@@ -62,20 +62,16 @@ export default defineConfig({
           autogenerate: { directory: "guides" },
         },
         {
-          label: "Tools & Equipment",
+          label: "About Us",
+          translations: {
+            en: "About Us",
+            "zh-cn": "关于我们",
+          },
           items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
+            { label: "Terms of Service", link: "about/terms-of-service/" },
+            { label: "Privacy Policy", link: "about/privacy-policy/" },
           ],
-        },
-        {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
-        },
+        }
       ],
       social: {
         github: "https://github.com/airdb",
