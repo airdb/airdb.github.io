@@ -82,8 +82,8 @@ importers:
         specifier: ^0.5.9
         version: 0.5.9(tailwindcss@3.4.16)
       astro-vtbot:
-        specifier: ^1.10.7
-        version: 1.10.7
+        specifier: ^2.0.1
+        version: 2.0.1
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -977,8 +977,8 @@ packages:
   '@vtbag/inspection-chamber@1.0.18':
     resolution: {integrity: sha512-QAK+4y7xDUiBhEsvZQD4yPQaWMYaHUrhXbB8Ba2y7++31CX8+9UE7RIuGIlSNzG6QVBZijVVKxzYXld/h6jvpQ==}
 
-  '@vtbag/turn-signal@1.2.2':
-    resolution: {integrity: sha512-LMYzKDaRzv9qov3KFheHi/GpnlhIh4HiSzv5b5KTtLqZvA57ZqmdtbotmSNJFda6DE9Lq5oRElENgGdN9ksZtA==}
+  '@vtbag/turn-signal@1.3.0':
+    resolution: {integrity: sha512-2Dj5sHjCrdDclGInN8K2pGCwlWmhT53jIqKL7sJLOFYKJlDSTz+LcC/JJFYNDPr7US001Aum51QtCcz1FXbvHw==}
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -1060,8 +1060,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.10.7:
-    resolution: {integrity: sha512-lwCMq+ruuTbHooJ/ZYL2tA99KXDXqbmD5JNBtlnuO7EsEp7FBpwIVBOHt/lDkqUtDt+vQkWRPA5cLZ3tEny48g==}
+  astro-vtbot@2.0.1:
+    resolution: {integrity: sha512-bh1ldgEis2rVB0vWfy8zzPfU/TPmZBfX5ogqvK950t2mFV5LaXbbZGlHVDvYnqES241kVk3owZP5Crtf5RDnig==}
 
   astro@5.0.8:
     resolution: {integrity: sha512-nW4TmRCeG3t2iDmm91KPvYpYNljNfjeaneN4BX463DKAZ3MPmUn92aKefOXC0bjMHQ2Gamc8MIZ6sORS2EhyAQ==}
@@ -3734,7 +3734,7 @@ snapshots:
     dependencies:
       eruda: 3.4.1
 
-  '@vtbag/turn-signal@1.2.2': {}
+  '@vtbag/turn-signal@1.3.0': {}
 
   abbrev@2.0.0: {}
 
@@ -3799,12 +3799,12 @@ snapshots:
       astro: 5.0.8(jiti@1.21.6)(rollup@4.28.1)(terser@5.37.0)(typescript@5.7.2)(yaml@2.6.1)
       rehype-expressive-code: 0.38.3
 
-  astro-vtbot@1.10.7:
+  astro-vtbot@2.0.1:
     dependencies:
       '@vtbag/cam-shaft': 1.0.3
       '@vtbag/element-crossing': 1.0.4
       '@vtbag/inspection-chamber': 1.0.18
-      '@vtbag/turn-signal': 1.2.2
+      '@vtbag/turn-signal': 1.3.0
 
   astro@5.0.8(jiti@1.21.6)(rollup@4.28.1)(terser@5.37.0)(typescript@5.7.2)(yaml@2.6.1):
     dependencies:
