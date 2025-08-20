@@ -21,7 +21,7 @@
     "@preline/dropdown": "^2.6.0",
     "@preline/overlay": "^2.6.0",
     "@preline/tabs": "^2.6.0",
-    "astro": "^5.12.8",
+    "astro": "^5.13.1",
     "astro-compressor": "^1.1.1",
     "astro-expressive-code": "^0.41.3",
     "clipboard": "^2.0.11",
