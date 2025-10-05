@@ -45,8 +45,8 @@ importers:
         specifier: ^5.13.7
         version: 5.13.7(@types/node@24.3.0)(jiti@1.21.7)(rollup@4.50.0)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.0)
       astro-compressor:
-        specifier: ^1.1.1
-        version: 1.1.1
+        specifier: ^1.1.2
+        version: 1.1.2
       astro-expressive-code:
         specifier: ^0.41.3
         version: 0.41.3(astro@5.13.7(@types/node@24.3.0)(jiti@1.21.7)(rollup@4.50.0)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.0))
@@ -1246,8 +1246,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro-compressor@1.1.1:
-    resolution: {integrity: sha512-yvwVmaTb6SMCd6MTufz0pYBsYXPTZu66QjNgAPrDqLqrHfKAsIIQ/4JTci76eS+rX6rdbuDeBb0SVlgrRCCtuw==}
+  astro-compressor@1.1.2:
+    resolution: {integrity: sha512-BsX6ypOkRff2g7e5vA47Vlpq9MfVxAo4pXzfkJvXTSzzrSYvf8m3e0lbyGK6eReSzWcAPXymOTIoooqDX1BTlA==}
     engines: {node: '>=22.15.0 <23.0.0 || >=23.8.0'}
 
   astro-expressive-code@0.41.3:
@@ -4264,7 +4264,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-compressor@1.1.1: {}
+  astro-compressor@1.1.2: {}
 
   astro-expressive-code@0.41.3(astro@5.13.7(@types/node@24.3.0)(jiti@1.21.7)(rollup@4.50.0)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.0)):
     dependencies:
