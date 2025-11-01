@@ -18,7 +18,7 @@
     "@astrojs/vercel": "^8.2.8",
     "@preline/accordion": "^3.2.0",
     "@preline/collapse": "^3.2.3",
-    "@preline/dropdown": "^2.6.0",
+    "@preline/dropdown": "^3.2.3",
     "@preline/overlay": "^3.2.3",
     "@preline/tabs": "^2.6.0",
     "astro": "^5.13.7",
