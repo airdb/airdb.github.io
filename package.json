@@ -15,7 +15,7 @@
     "@astrojs/starlight": "^0.36.2",
     "@astrojs/starlight-tailwind": "^3.0.1",
     "@astrojs/tailwind": "^5.1.5",
-    "@astrojs/vercel": "^8.2.8",
+    "@astrojs/vercel": "^9.0.0",
     "@preline/accordion": "^3.2.0",
     "@preline/collapse": "^3.2.3",
     "@preline/dropdown": "^3.2.3",
