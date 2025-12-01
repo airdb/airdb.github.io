@@ -27,8 +27,8 @@ importers:
         specifier: ^9.0.0
         version: 9.0.0(astro@5.15.9(@types/node@24.10.1)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.0))(rollup@4.53.3)
       '@preline/accordion':
-        specifier: ^3.2.0
-        version: 3.2.0
+        specifier: ^3.2.3
+        version: 3.2.3
       '@preline/collapse':
         specifier: ^3.2.3
         version: 3.2.3
@@ -750,8 +750,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@preline/accordion@3.2.0':
-    resolution: {integrity: sha512-m5Qdl7fbY9hItB0wPxxhhIWzHKUTLJpTNJ4ebZQ1S6Igh8L0BQoGw25q/LhhmTVq+SN4f8osn9P4ua8+/Ra2RQ==}
+  '@preline/accordion@3.2.3':
+    resolution: {integrity: sha512-bxD40aYgnsyuxPNmFN5+4EKAna9PCXpxpA/MrY3j5zpkTyBRxcEykucLE/aPTL0LrUd8/ifwoIERRSVcL7GTFA==}
 
   '@preline/collapse@3.2.3':
     resolution: {integrity: sha512-9h3idfw3+8TJB4Apc2kki+DIunq2gahmwLJkmRmK6r2Z3ONkraKAvKR8ZeyxmHsjucebfcKIQwec3nqlsu86nQ==}
@@ -3839,7 +3839,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@preline/accordion@3.2.0': {}
+  '@preline/accordion@3.2.3': {}
 
   '@preline/collapse@3.2.3': {}
 
