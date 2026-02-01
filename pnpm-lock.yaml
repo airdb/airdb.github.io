@@ -19,10 +19,10 @@ importers:
         version: 0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))
       '@astrojs/starlight-tailwind':
         specifier: ^3.0.1
-        version: 3.0.1(@astrojs/starlight@0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2)))(@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.18(yaml@2.8.2)))(tailwindcss@3.4.18(yaml@2.8.2))
+        version: 3.0.1(@astrojs/starlight@0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2)))(@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2)))(tailwindcss@3.4.19(yaml@2.8.2))
       '@astrojs/tailwind':
         specifier: ^5.1.5
-        version: 5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.18(yaml@2.8.2))
+        version: 5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))
       '@astrojs/vercel':
         specifier: ^9.0.0
         version: 9.0.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(rollup@4.53.3)
@@ -75,12 +75,12 @@ importers:
         specifier: ^0.1.5
         version: 0.1.5
       tailwindcss:
-        specifier: ^3.4.18
-        version: 3.4.18(yaml@2.8.2)
+        specifier: ^3.4.19
+        version: 3.4.19(yaml@2.8.2)
     devDependencies:
       '@tailwindcss/forms':
         specifier: ^0.5.10
-        version: 0.5.10(tailwindcss@3.4.18(yaml@2.8.2))
+        version: 0.5.10(tailwindcss@3.4.19(yaml@2.8.2))
       astro-vtbot:
         specifier: ^2.1.7
         version: 2.1.7
@@ -1488,8 +1488,8 @@ packages:
   fast-uri@3.1.0:
     resolution: {integrity: sha512-iPeeDKJSWf4IEOasVVrknXpaBV0IApz/gp7S2bb7Z4Lljbl2MGJRqInZiUrQwV16cpzw/D3S5j5Julj/gT52AA==}
 
-  fastq@1.19.1:
-    resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
+  fastq@1.20.1:
+    resolution: {integrity: sha512-GGToxJ/w1x32s/D2EKND7kTil4n8OVk/9mycTc4VDza13lOvpUZTGX3mFSCtV9ksdGBVzvsyAVLM6mHFThxXxw==}
 
   fdir@6.5.0:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
@@ -2615,14 +2615,15 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@3.4.18:
-    resolution: {integrity: sha512-6A2rnmW5xZMdw11LYjhcI5846rt9pbLSabY5XPxo+XWdxwZaFEn47Go4NzFiHu9sNNmr/kXivP1vStfvMaK1GQ==}
+  tailwindcss@3.4.19:
+    resolution: {integrity: sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
   tar@7.5.2:
     resolution: {integrity: sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==}
     engines: {node: '>=18'}
+    deprecated: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exhorbitant rates) by contacting i@izs.me
 
   terminal-link@5.0.0:
     resolution: {integrity: sha512-qFAy10MTMwjzjU8U16YS4YoZD+NQLHzLssFMNqgravjbvIPNiqkGFR4yjhJfmY9R5OFU7+yHxc6y+uGHkKwLRA==}
@@ -3190,11 +3191,11 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/starlight-tailwind@3.0.1(@astrojs/starlight@0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2)))(@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.18(yaml@2.8.2)))(tailwindcss@3.4.18(yaml@2.8.2))':
+  '@astrojs/starlight-tailwind@3.0.1(@astrojs/starlight@0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2)))(@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2)))(tailwindcss@3.4.19(yaml@2.8.2))':
     dependencies:
       '@astrojs/starlight': 0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))
-      '@astrojs/tailwind': 5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.18(yaml@2.8.2))
-      tailwindcss: 3.4.18(yaml@2.8.2)
+      '@astrojs/tailwind': 5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))
+      tailwindcss: 3.4.19(yaml@2.8.2)
 
   '@astrojs/starlight@0.37.0(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
@@ -3230,13 +3231,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.18(yaml@2.8.2))':
+  '@astrojs/tailwind@5.1.5(astro@5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))':
     dependencies:
       astro: 5.15.9(@types/node@25.0.3)(@vercel/functions@2.2.13)(jiti@1.21.7)(rollup@4.53.3)(terser@5.43.1)(typescript@5.9.3)(yaml@2.8.2)
       autoprefixer: 10.4.21(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)
-      tailwindcss: 3.4.18(yaml@2.8.2)
+      tailwindcss: 3.4.19(yaml@2.8.2)
     transitivePeerDependencies:
       - ts-node
 
@@ -3630,7 +3631,7 @@ snapshots:
   '@nodelib/fs.walk@1.2.8':
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.19.1
+      fastq: 1.20.1
 
   '@oslojs/encoding@1.1.0': {}
 
@@ -3865,10 +3866,10 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@tailwindcss/forms@0.5.10(tailwindcss@3.4.18(yaml@2.8.2))':
+  '@tailwindcss/forms@0.5.10(tailwindcss@3.4.19(yaml@2.8.2))':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.18(yaml@2.8.2)
+      tailwindcss: 3.4.19(yaml@2.8.2)
 
   '@types/debug@4.1.12':
     dependencies:
@@ -4591,7 +4592,7 @@ snapshots:
 
   fast-uri@3.1.0: {}
 
-  fastq@1.19.1:
+  fastq@1.20.1:
     dependencies:
       reusify: 1.1.0
 
@@ -6179,7 +6180,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@3.4.18(yaml@2.8.2):
+  tailwindcss@3.4.19(yaml@2.8.2):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
