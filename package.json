@@ -19,7 +19,7 @@
     "@preline/accordion": "^3.2.3",
     "@preline/collapse": "^3.2.3",
     "@preline/dropdown": "^3.2.3",
-    "@preline/overlay": "^3.2.3",
+    "@preline/overlay": "^4.0.0",
     "@preline/tabs": "^2.6.0",
     "astro": "^5.15.9",
     "astro-compressor": "^1.1.2",
