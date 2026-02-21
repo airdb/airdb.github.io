@@ -1,0 +1,1 @@
+import{i}from"./index.0zPQW2eU.js";import"./client.B9YBqyHK.js";i();
