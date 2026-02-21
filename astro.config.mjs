@@ -10,7 +10,7 @@ export default defineConfig({
   site: "https://airdb.com",
   image: {
     domains: ["airdb.com"],
-    remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }],
+    remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
   // i18n: {
   //   defaultLocale: "en",
@@ -47,7 +47,7 @@ export default defineConfig({
           label: "English",
           lang: "en",
         },
-        "en": { label: "English", lang: "en" },
+        en: { label: "English", lang: "en" },
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       // https://starlight.astro.build/guides/sidebar/
@@ -70,10 +70,10 @@ export default defineConfig({
             { label: "Terms of Service", link: "about/terms-of-service/" },
             { label: "Privacy Policy", link: "about/privacy-policy/" },
           ],
-        }
+        },
       ],
       social: [
-	{ label: "github", icon: 'github', href: 'https://github.com/airdb' },
+        { label: "github", icon: "github", href: "https://github.com/airdb" },
       ],
       disable404Route: true,
       customCss: ["./src/assets/styles/starlight.css"],
@@ -81,7 +81,8 @@ export default defineConfig({
       components: {
         SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
         Head: "./src/components/ui/starlight/Head.astro",
-        MobileMenuFooter: "./src/components/ui/starlight/MobileMenuFooter.astro",
+        MobileMenuFooter:
+          "./src/components/ui/starlight/MobileMenuFooter.astro",
         ThemeSelect: "./src/components/ui/starlight/ThemeSelect.astro",
       },
       head: [
