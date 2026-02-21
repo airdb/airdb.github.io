@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-// import vercelStatic from "@astrojs/vercel/static";
+import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
@@ -11,6 +10,7 @@ export default defineConfig({
   site: "https://airdb.com",
   image: {
     domains: ["airdb.com"],
+    remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }],
   },
   // i18n: {
   //   defaultLocale: "en",
@@ -24,7 +24,6 @@ export default defineConfig({
   // },
   prefetch: true,
   integrations: [
-    tailwind(),
     sitemap({
       i18n: {
         filter: (page) => !page.includes("404"),
@@ -111,5 +110,8 @@ export default defineConfig({
   experimental: {
     // clientPrerender: true,
     // directRenderScript: true,
-  }
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
