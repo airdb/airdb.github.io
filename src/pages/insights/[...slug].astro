@@ -38,7 +38,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
           </div>
           <div
             id="progress-mobile"
-            class="fixed left-0 top-0 h-2 w-full bg-gradient-to-r from-orange-400/30 to-orange-400 md:hidden"
+            class="fixed top-0 left-0 h-2 w-full bg-gradient-to-r from-orange-400/30 to-orange-400 md:hidden"
           >
           </div>
           <div id="pin" class="mt-10 hidden space-y-4 md:block">
@@ -51,12 +51,12 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
               >
               </div>
             </div>
-            <p class="text-pretty text-sm font-light text-neutral-500">
+            <p class="text-sm font-light text-pretty text-neutral-500">
               Table of Contents:
             </p>
             <div id="toc" class="">
               <ul
-                class="space-y-2 text-pretty text-base text-neutral-700 transition duration-300 dark:text-neutral-400"
+                class="space-y-2 text-base text-pretty text-neutral-700 transition duration-300 dark:text-neutral-400"
               >
               </ul>
             </div>
@@ -65,13 +65,13 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 
         <div class="md:pt-8">
           <h1
-            class="mb-4 text-balance text-center text-2xl font-bold text-neutral-800 dark:text-neutral-200 sm:text-3xl md:mb-6 md:text-left"
+            class="mb-4 text-center text-2xl font-bold text-balance text-neutral-800 sm:text-3xl md:mb-6 md:text-left dark:text-neutral-200"
           >
             {post.data.title}
           </h1>
 
           <article
-            class="text-pretty text-lg text-neutral-700 dark:text-neutral-300"
+            class="text-lg text-pretty text-neutral-700 dark:text-neutral-300"
           >
             <Content />
           </article>
@@ -171,7 +171,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
     }
   };
 
-  document.addEventListener("DOMContentLoaded", (event) => {
+  document.addEventListener("DOMContentLoaded", () => {
     window.onscroll = onScroll;
 
     // Set initial width of progress bar
