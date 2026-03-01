@@ -1,11 +1,25 @@
-# Versatile Landing, Blog & Docs Template for a Simplified Web Presence
+# AIRDB 官方网站 / AIRDB Official Website
 
-![ScrewFast](https://github.com/airdb/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
+## 简介
 
-break chnage 68a753ab75ee1b1bb7a3ac6d5efb8de7cc34a64c
-https://github.com/mearashadowfax/ScrewFast/commit/68a753ab75ee1b1bb7a3ac6d5efb8de7cc34a64c#diff-ddde895c93027f02c64f4a4081247c0b4f2c7a14393cb9c4af28adb7cffed063
+**[AIRDB](https://airdb.com)** 是一家前沿的原生 AI 创业公司，秉持独特的 AI 优先理念。本项目是 AIRDB 的官方网站，提供公司介绍、产品展示、博客文章和技术文档等内容。
 
-ScrewFast is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, ScrewFast provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
+本网站基于以下技术构建：
+- [Astro](https://astro.build/) — 现代静态网站生成框架
+- [Tailwind CSS](https://tailwindcss.com/) — 实用优先的 CSS 框架
+- [Preline UI](https://preline.co/) — 开源 UI 组件库
+
+网站支持中英文双语（i18n），并部署于 [Vercel](https://vercel.com)。
+
+**[在线访问](https://airdb.com)**
+
+---
+
+## Introduction
+
+**[AIRDB](https://airdb.com)** is a frontier AI-native startup built on a unique AI-first mindset. This repository contains the source code for AIRDB's official website, featuring company information, product showcases, blog posts, and technical documentation.
+
+The site is built with [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), supports bilingual content (Chinese & English), and is deployed on [Vercel](https://vercel.com).
 
 **[View Live Demo](https://airdb.com)**
 
