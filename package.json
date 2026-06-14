@@ -14,7 +14,7 @@
     "@astrojs/sitemap": "^3.6.1",
     "@astrojs/starlight": "^0.37.6",
     "@astrojs/starlight-tailwind": "^4.0.2",
-    "@preline/accordion": "^3.2.3",
+    "@preline/accordion": "^4.1.3",
     "@preline/collapse": "^3.2.3",
     "@preline/dropdown": "^3.2.3",
     "@preline/overlay": "^4.0.0",
