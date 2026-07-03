@@ -11,7 +11,7 @@ help: ## Show help messages
 	@sed -n '/##/s/\(.*\):.*##/  \1#/p' ${MAKEFILE_LIST} | grep -v "MAKEFILE_LIST" | column -t -c 2 -s '#'
 
 install: ## Install deps
-	pnpm approve-builds --all
+	pnpm approve-builds esbuild sharp
 	pnpm install
 
 
