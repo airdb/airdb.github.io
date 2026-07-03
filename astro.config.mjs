@@ -9,6 +9,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://airdb.com",
   image: {
+    dangerouslyProcessSVG: true,
     domains: ["airdb.com"],
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
@@ -58,7 +59,9 @@ export default defineConfig({
             en: "Quick Start Guides",
             "zh-cn": "快速入门指南",
           },
-          autogenerate: { directory: "guides" },
+          items: [
+            { autogenerate: { directory: "guides" } }
+          ]
         },
         {
           label: "About Us",
