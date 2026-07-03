@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@astrojs/check':
-        specifier: ^0.9.8
+        specifier: ^0.9.9
         version: 0.9.9(prettier-plugin-astro@0.14.1)(prettier@3.9.4)(typescript@5.9.3)
       '@astrojs/sitemap':
         specifier: ^3.7.3
