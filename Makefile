@@ -11,7 +11,9 @@ help: ## Show help messages
 	@sed -n '/##/s/\(.*\):.*##/  \1#/p' ${MAKEFILE_LIST} | grep -v "MAKEFILE_LIST" | column -t -c 2 -s '#'
 
 install: ## Install deps
-	pnpm i
+	pnpm approve-builds --all
+	pnpm install
+
 
 dev run: ## Run local
 	pnpm dev
