@@ -4,7 +4,7 @@ import Icon from "@components/ui/icons/Icon.astro";
 
 <button
   type="button"
-  class="focus-visible:ring-secondary group inline-flex items-center rounded-lg p-2.5 text-neutral-600 outline-none ring-zinc-500 transition duration-300 hover:bg-neutral-100 focus:outline-none focus-visible:outline-none focus-visible:ring-1 dark:text-neutral-400 dark:ring-zinc-200 dark:hover:bg-neutral-700"
+  class="focus-visible:ring-secondary group inline-flex items-center rounded-lg p-2.5 text-neutral-600 ring-zinc-500 transition duration-300 outline-none hover:bg-neutral-100 focus:outline-none focus-visible:ring-1 focus-visible:outline-none dark:text-neutral-400 dark:ring-zinc-200 dark:hover:bg-neutral-700"
   data-bookmark-button="bookmark-button"
 >
   <Icon name="bookmark" />
@@ -13,13 +13,16 @@ import Icon from "@components/ui/icons/Icon.astro";
 <script>
   class Bookmark {
     private static readonly BOOKMARKS_KEY = "bookmarks";
-    private bookmarkButton: Element | null;
+    private bookmarkButton: Element | null = null;
+
+    /*
 
     constructor(private dataAttrValue: string) {
       this.bookmarkButton = document.querySelector(
-        `[data-bookmark-button="${dataAttrValue}"]`
+        `[data-bookmark-button="${dataAttrValue}"]`,
       );
     }
+      */
 
     private getStoredBookmarks(): string[] {
       const item = localStorage.getItem(Bookmark.BOOKMARKS_KEY);
@@ -32,7 +35,7 @@ import Icon from "@components/ui/icons/Icon.astro";
       }
 
       this.bookmarkButton?.addEventListener("click", () =>
-        this.toggleBookmark()
+        this.toggleBookmark(),
       );
     }
 
@@ -46,14 +49,14 @@ import Icon from "@components/ui/icons/Icon.astro";
         if (svgElement) {
           svgElement.setAttribute(
             "class",
-            "h-6 w-6 fill-red-500 dark:fill-red-500"
+            "h-6 w-6 fill-red-500 dark:fill-red-500",
           );
         }
         let pathElement = svgElement?.querySelector("path");
         if (pathElement) {
           pathElement.setAttribute(
             "class",
-            "fill-current text-red-500 dark:text-red-500"
+            "fill-current text-red-500 dark:text-red-500",
           );
         }
       }
@@ -69,7 +72,7 @@ import Icon from "@components/ui/icons/Icon.astro";
         if (pathElement) {
           pathElement.setAttribute(
             "class",
-            "fill-current text-neutral-500 group-hover:text-red-400 dark:text-neutral-500 group-hover:dark:text-red-400"
+            "fill-current text-neutral-500 group-hover:text-red-400 dark:text-neutral-500 group-hover:dark:text-red-400",
           );
         }
       }
@@ -86,10 +89,11 @@ import Icon from "@components/ui/icons/Icon.astro";
       }
       localStorage.setItem(
         Bookmark.BOOKMARKS_KEY,
-        JSON.stringify(storedBookmarks)
+        JSON.stringify(storedBookmarks),
       );
     }
   }
 
-  new Bookmark("bookmark-button").init();
+  // new Bookmark("bookmark-button").init();
+  new Bookmark().init();
 </script>

@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import { formatDate } from "@utils/utils";
 import type { CollectionEntry } from "astro:content";
+import { getEntrySlug } from "../../../lib/content";
 
 const { blogEntry, recentBlogLocale = "" } = Astro.props;
 
@@ -13,8 +14,10 @@ interface Props {
 ---
 
 <a
-  class="group block rounded-xl outline-none ring-zinc-500 transition duration-300 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-  href={recentBlogLocale !== "" ? `/${recentBlogLocale}/blog/${blogEntry.slug}/` : `/blog/${blogEntry.slug}/`}
+  class="group block rounded-xl ring-zinc-500 transition duration-300 outline-none focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
+  href={recentBlogLocale !== ""
+    ? `/${recentBlogLocale}/blog/${getEntrySlug(blogEntry)}/`
+    : `/blog/${getEntrySlug(blogEntry)}/`}
   data-astro-prefetch
 >
   <div>
@@ -27,7 +30,7 @@ interface Props {
     />
     <!-- The title of the blog post -->
     <h3
-      class="mt-2 text-balance text-lg font-medium text-neutral-800 group-hover:text-orange-400 dark:text-neutral-300 dark:group-hover:text-neutral-50"
+      class="mt-2 text-lg font-medium text-balance text-neutral-800 group-hover:text-orange-400 dark:text-neutral-300 dark:group-hover:text-neutral-50"
     >
       {blogEntry.data.title}
     </h3>

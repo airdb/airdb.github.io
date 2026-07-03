@@ -13,6 +13,11 @@ export default defineConfig({
     domains: ["airdb.com"],
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
+  vite: {
+    resolve: {
+      alias: { "$lib": "./src/lib" }
+    }
+  },
   // i18n: {
   //   defaultLocale: "en",
   //   locales: ["en", "fr"],

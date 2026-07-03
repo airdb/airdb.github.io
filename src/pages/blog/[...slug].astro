@@ -11,6 +11,22 @@ import { capitalize, formatDate } from "@utils/utils";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
+import { getEntrySlug } from "@/lib/content";
+
+// Props 声明（页面必须有）
+// 1. Props 只解构一次 post
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+const { post } = Astro.props;
+
+// 2. blogPosts 只获取一次
+const blogPosts = await getCollection("blog");
+
+// 3. relatedPosts 只定义一次
+const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
+  (blogEntry) => getEntrySlug(blogEntry) !== getEntrySlug(post),
+);
 
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
@@ -18,19 +34,18 @@ export async function getStaticPaths() {
     return id.startsWith("en/");
   });
   return blogPosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: getEntrySlug(post) },
     props: { post },
   }));
 }
-// Get the current post's data
-const { post } = Astro.props;
 
+/*
 // Get all blog posts
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
   "blog",
   ({ id }) => {
     return id.startsWith("en/");
-  }
+  },
 );
 
 // Filter out the current post to get related posts
@@ -38,14 +53,15 @@ const blogPosts: CollectionEntry<"blog">[] = await getCollection(
 // In a production site, you might want to implement a more robust algorithm, choosing related posts based on tags, categories, dates, authors, or keywords.
 // See example: https://blog.codybrunner.com/2024/adding-related-articles-with-astro-content-collections/
 const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
-  (blogEntry) => blogEntry.slug !== post.slug
+  (blogEntry) => getEntrySlug(blogEntry) !== getEntrySlug(post),
 );
+*/
 
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 ---
 
 <MainLayout title={pageTitle}>
-  <section class="mx-auto max-w-3xl px-4 pb-12 pt-6 sm:px-6 lg:px-8 lg:pt-10">
+  <section class="mx-auto max-w-3xl px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pt-10">
     <div class="max-w-2xl">
       <div class="mb-6 flex items-center justify-between">
         <div class="flex w-full gap-x-5 sm:items-center sm:gap-x-3">
@@ -54,10 +70,8 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
             <div class="flex items-center justify-between gap-x-2">
               <div>
                 <!--Post metadata and author info-->
-                <span
-                    class="font-bold text-neutral-700 dark:text-neutral-300"
-                >
-                    {post.data.author}
+                <span class="font-bold text-neutral-700 dark:text-neutral-300">
+                  {post.data.author}
                 </span>
                 <ul class="text-xs text-neutral-500">
                   <li
@@ -78,7 +92,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
       </div>
       <!--Blog post title-->
       <h2
-        class="mb-3 text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-3xl"
+        class="mb-3 text-2xl font-bold text-neutral-800 md:text-3xl dark:text-neutral-200"
       >
         {post.data.title}
       </h2>
@@ -88,7 +102,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
           post.data.contents.map((content: string, index: any) =>
             index === 1 ? (
               <>
-                <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
+                <p class="text-lg text-pretty text-neutral-700 dark:text-neutral-300">
                   {content}
                 </p>
                 <Image
@@ -100,10 +114,10 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
                 />
               </>
             ) : (
-              <p class="text-pretty text-lg text-neutral-700 dark:text-neutral-300">
+              <p class="text-lg text-pretty text-neutral-700 dark:text-neutral-300">
                 {content}
               </p>
-            )
+            ),
           )
         }
       </div>
@@ -116,7 +130,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
         >
           {
             post.data.tags?.map((tag: string) => (
-              <span class="inline-flex items-center gap-x-1.5 rounded-lg bg-neutral-400/30 px-3 py-1.5 text-xs font-medium text-neutral-700 outline-none focus:outline-none focus-visible:outline-none focus-visible:ring dark:bg-neutral-700/60 dark:text-neutral-300">
+              <span class="inline-flex items-center gap-x-1.5 rounded-lg bg-neutral-400/30 px-3 py-1.5 text-xs font-medium text-neutral-700 outline-none focus:outline-none focus-visible:ring focus-visible:outline-none dark:bg-neutral-700/60 dark:text-neutral-300">
                 {capitalize(tag)}
               </span>
             ))
@@ -146,7 +160,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
   <section class="mx-auto max-w-3xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
     <div class="mb-10 max-w-2xl">
       <h2
-        class="text-balance text-2xl font-bold text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+        class="text-2xl font-bold text-balance text-neutral-800 md:text-4xl md:leading-tight dark:text-neutral-200"
       >
         Related articles
       </h2>

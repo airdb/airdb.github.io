@@ -4,20 +4,26 @@ import { SITE } from "@data/constants";
 import MainLayout from "@/layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import { getEntrySlug } from "@/lib/content";
 
 // Use `getStaticPaths` to generate static routes for generated pages on build
 export async function getStaticPaths() {
   const insightPosts = await getCollection("insights");
   return insightPosts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: getEntrySlug(post) },
     props: { post },
   }));
 }
 
-// Get the props for this page that define a specific insight post
+interface Props {
+  post: CollectionEntry<"insights">;
+}
 const { post } = Astro.props;
 
-const { Content } = await post.render();
+// 判空渲染缓存，新版无 .render() 方法，改用 rendered.html
+if (!post.rendered) throw new Error(`Missing rendered content for ${post.id}`);
+const articleHtml = post.rendered.html;
 
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 ---
@@ -70,11 +76,11 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
             {post.data.title}
           </h1>
 
+          <!-- 替换原 <Content />，使用 set:html 输出 markdown 正文 -->
           <article
             class="text-lg text-pretty text-neutral-700 dark:text-neutral-300"
-          >
-            <Content />
-          </article>
+            set:html={articleHtml}
+          />
         </div>
       </div>
     </div>

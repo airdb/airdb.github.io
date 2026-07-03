@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import Icon from "@components/ui/icons/Icon.astro";
 import type { CollectionEntry } from "astro:content";
+import { getEntrySlug } from "../../../lib/content";
 
 const {
   insightEntry,
@@ -17,8 +18,8 @@ interface Props {
 
 <!-- The anchor tag is the root container for the "Insight" card. It links to the insight detail page. -->
 <a
-  class="group rounded-xl outline-none ring-zinc-500 transition duration-300 focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
-  href={`/insights/${insightEntry.slug}/`}
+  class="group rounded-xl ring-zinc-500 transition duration-300 outline-none focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
+  href={`/insights/${getEntrySlug(insightEntry)}/`}
 >
   <!-- This is the container for the insight's cover image. -->
   <div class="relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]">

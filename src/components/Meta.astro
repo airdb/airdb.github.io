@@ -40,6 +40,7 @@ const languages: { [key: string]: string } = {
 };
 
 function createHref(lang: string, prefix: string, path: string): string {
+  console.log(lang);
   const hasPrefix = path.startsWith(`/${prefix}/`);
 
   const basePath = hasPrefix ? path : `/${prefix}${path}`;

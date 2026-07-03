@@ -1,5 +1,3 @@
-import { paths } from "node_modules/@astrojs/starlight/utils/routing";
-
 export const Icons = {
   groups: {
     paths: [
@@ -377,7 +375,7 @@ export const Icons = {
     viewBox: "0 0 24 24",
     fill: "currentColor",
     title: "linkedIn",
-  }, 
+  },
   quotation: {
     paths: [
       {
