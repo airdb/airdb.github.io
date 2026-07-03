@@ -1,12 +1,12 @@
-// https://docs.astro.build/en/guides/content-collections/#defining-collections
-
 import { defineCollection } from 'astro:content';
 import { docsSchema } from '@astrojs/starlight/schema';
+import { docsLoader } from '@astrojs/starlight/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'zod';
 
 
 const productsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/products" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
@@ -62,7 +62,7 @@ const productsCollection = defineCollection({
 });
 
 const blogCollection = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/blog" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
@@ -80,7 +80,7 @@ const blogCollection = defineCollection({
 });
 
 const insightsCollection = defineCollection({
-  type: "content",
+  loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: "./src/content/insights" }),
   schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
@@ -91,7 +91,10 @@ const insightsCollection = defineCollection({
 });
 
 export const collections = {
-  docs: defineCollection({ schema: docsSchema() }),
+  docs: defineCollection({
+    loader: docsLoader(),
+    schema: docsSchema(),
+  }),
   'products': productsCollection,
   'blog': blogCollection,
   'insights': insightsCollection,
