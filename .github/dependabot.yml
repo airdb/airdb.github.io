@@ -9,3 +9,16 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "monthly"
+    # 锁定版本更新策略，避免破坏性大版本自动升级
+    versioning-strategy: increase
+    commit-message:
+      prefix: deps
+    # 允许更新所有依赖
+    allow:
+      dependency-type: all
+    # 限制一次最多打开5个PR，防止批量冲突
+    pull-requests:
+      maximum-pull-requests: 5
+    # 使用更高版本pnpm适配现代lock
+    runtime:
+      pnpm: "latest"
