@@ -1,39 +1,63 @@
 {
   "title": "Simple, Transparent Pricing",
   "subTitle": "Boost efficiency with Airdb's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
+  "thirdOption": "Need something bigger?",
   "btnText": "Get a Custom Quote",
 
-  "starterKit": {
-    "name": "Basic Service",
-    "description": "Best option for your website - small scale uses",
-    "price": "99",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
-    "features": [
-      "Standard support",
-      "One-stop Corporatec IT services",
-      "website hosting solution",
-      "Access to empower your business with AI tools"
-    ],
-    "purchaseBtnTitle": "Get Started",
-    "purchaseLink": "#"
-  },
+  "plans": [
+    {
+      "name": "Basic Service",
+      "description": "Best for individuals and small teams getting started",
+      "price": "99",
+      "cents": ".00",
+      "billingFrequency": "USD / monthly",
+      "features": [
+        "Standard support",
+        "One-stop corporate IT services",
+        "Website hosting solution",
+        "Access to core AI tools",
+        "Community forum access"
+      ],
+      "purchaseBtnTitle": "Get Started",
+      "purchaseLink": "#",
+      "highlight": false
+    },
 
-  "professionalToolbox": {
-    "name": "Professional Technical Adviser",
-    "description": "Best for large scale uses",
-    "price": "999",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
-    "features": [
-      "Premium priority support",
-      "CTO/CIO/CISO/DPO as a service",
-      "Exclusive content & deals",
-      "High-level security & compliance technical solutions"
-    ],
-    "purchaseBtnTitle": "Get Expert Support",
-    "purchaseLink": "#"
-  }
+    {
+      "name": "Growth Plan",
+      "description": "Best for growing teams that need dedicated AI and data support",
+      "price": "349",
+      "cents": ".00",
+      "billingFrequency": "USD / monthly",
+      "features": [
+        "Priority support",
+        "Dedicated AI copilot workspace",
+        "Data pipeline integration",
+        "Monthly performance & usage reports",
+        "Up to 5 team seats included"
+      ],
+      "purchaseBtnTitle": "Start Growing",
+      "purchaseLink": "#",
+      "highlight": true,
+      "badge": "Best value"
+    },
+
+    {
+      "name": "Professional Technical Adviser",
+      "description": "Best for large scale uses",
+      "price": "999",
+      "cents": ".00",
+      "billingFrequency": "USD / monthly",
+      "features": [
+        "Premium priority support",
+        "CTO/CIO/CISO/DPO as a service",
+        "Exclusive content & deals",
+        "High-level security & compliance technical solutions",
+        "Unlimited team seats"
+      ],
+      "purchaseBtnTitle": "Get Expert Support",
+      "purchaseLink": "#",
+      "highlight": false
+    }
+  ]
 }

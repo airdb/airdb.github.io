@@ -1,39 +1,63 @@
 {
   "title": "简单、透明的定价",
   "subTitle": "选择 Airdb 清晰、高性价比的方案，提升效率。",
-  "badge": "最超值",
-  "thirdOption": "需要企业解决方案？",
+  "thirdOption": "需要更大规模的方案？",
   "btnText": "获取定制报价",
 
-  "starterKit": {
-    "name": "基础最小套餐",
-    "description": "小规模企业的最佳选择",
-    "price": "99",
-    "cents": ".00",
-    "billingFrequency": "USD / 月",
-    "features": [
-      "标准的支持",
-      "一站式企业 IT 服务",
-      "网站托管解决方案",
-      "使用 AI 工具增强您的业务"
-    ],
-    "purchaseBtnTitle": "立刻托管",
-    "purchaseLink": "#"
-  },
+  "plans": [
+    {
+      "name": "基础服务",
+      "description": "适合刚起步的个人和小团队",
+      "price": "99",
+      "cents": ".00",
+      "billingFrequency": "USD / 月",
+      "features": [
+        "标准的支持",
+        "一站式企业 IT 服务",
+        "网站托管解决方案",
+        "核心 AI 工具访问权限",
+        "社区论坛访问权限"
+      ],
+      "purchaseBtnTitle": "立刻开始",
+      "purchaseLink": "#",
+      "highlight": false
+    },
 
-  "professionalToolbox": {
-    "name": "专业技术顾问",
-    "description": "适合大规模企业选择",
-    "price": "999",
-    "cents": ".00",
-    "billingFrequency": "USD / 月",
-    "features": [
-      "高优先级支持",
-      "提供 CTO/CIO/CISO/DPO 等高级人才服务",
-      "独家内容和优惠",
-      "高水准的安全与合规技术解决方案"
-    ],
-    "purchaseBtnTitle": "获取专家团队支持",
-    "purchaseLink": "#"
-  }
+    {
+      "name": "成长方案",
+      "description": "适合需要专属 AI 与数据支持的成长型团队",
+      "price": "349",
+      "cents": ".00",
+      "billingFrequency": "USD / 月",
+      "features": [
+        "优先支持",
+        "专属 AI Copilot 工作空间",
+        "数据管道集成",
+        "每月性能与使用情况报告",
+        "最多支持 5 个团队席位"
+      ],
+      "purchaseBtnTitle": "开启成长",
+      "purchaseLink": "#",
+      "highlight": true,
+      "badge": "最超值"
+    },
+
+    {
+      "name": "专业技术顾问",
+      "description": "适合大规模企业选择",
+      "price": "999",
+      "cents": ".00",
+      "billingFrequency": "USD / 月",
+      "features": [
+        "高优先级支持",
+        "提供 CTO/CIO/CISO/DPO 等高级人才服务",
+        "独家内容和优惠",
+        "高水准的安全与合规技术解决方案",
+        "不限团队席位数量"
+      ],
+      "purchaseBtnTitle": "获取专家团队支持",
+      "purchaseLink": "#",
+      "highlight": false
+    }
+  ]
 }
