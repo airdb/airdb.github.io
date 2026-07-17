@@ -14,7 +14,7 @@ const footerLinks = [
     links: [
       { name: "Documentation", url: "/welcome-to-docs/" },
       { name: "Products & Tools", url: "/products" },
-      { name: "Consultation Services", url: "/services" },
+      { name: "Consultation Services", url: "/solutions" },
     ],
   },
   {
@@ -22,7 +22,6 @@ const footerLinks = [
     links: [
       { name: "Terms of Service", url: "/about/terms-of-service" },
       { name: "Privacy Policy", url: "/about/privacy-policy" },
-      { name: "Careers", url: "#" },
       { name: "Blog", url: "/blog" },
     ],
   },

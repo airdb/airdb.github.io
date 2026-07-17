@@ -14,7 +14,7 @@ const footerLinks = [
     links: [
       { name: "文档", url: "/zh-cn/welcome-to-docs/" },
       { name: "产品", url: "/zh-cn/products" },
-      { name: "技术咨询服务", url: "/zh-cn/services" },
+      { name: "技术咨询服务", url: "/zh-cn/solutions" },
     ],
   },
   {
@@ -22,7 +22,6 @@ const footerLinks = [
     links: [
       { name: "服务条款", url: "/zh-cn/about/terms-of-service" },
       { name: "隐私政策", url: "/zh-cn/about/privacy-policy" },
-      { name: "招聘", url: "#" },
       { name: "博客", url: "/zh-cn/blog" },
     ],
   },
