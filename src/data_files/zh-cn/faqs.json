@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "对我们的品牌和产品有任何疑问，欢迎咨询，我们将给出准确的解答。",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "基础套餐包含哪些内容？",
+      "answer": "基础套餐涵盖核心的 AI 工具与网站托管服务，适合小规模团队使用，包含标准客服支持以及 Airdb 核心功能的访问权限，是团队将 AI 融入日常工作流程的理想起点。"
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "可以从基础套餐升级到专业套餐吗？",
+      "answer": "当然可以！您可以随时升级，以获得更丰富的高级功能、优先客服支持以及独家内容。请联系我们的支持团队，我们会为您提供无缝的升级体验。"
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "企业或批量合作可以享受哪些折扣？",
+      "answer": "企业客户可享受专属折扣，具体比例视合作规模而定。欢迎联系我们，说明您的需求，我们会为您提供定制化的报价方案。"
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "可以获得怎样的客户支持？",
+      "answer": "所有客户都将获得专属的邮件支持。基础套餐提供标准支持，专业套餐则可升级为优先支持，响应速度更快、协助也更专业。"
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "线上资料和文档更新频率如何？",
+      "answer": "我们会定期更新文档和指南，涵盖 AI、数据与安全领域的最新进展，以及新的产品功能。我们力求内容全面且易于理解，适合各个水平的用户。"
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Airdb 是否为大型企业级项目提供服务？",
+      "answer": "是的，我们的企业解决方案专为需要综合服务的大型企业设计，涵盖咨询、规划与技术实施，也可为大型项目提供人才支持。欢迎联系我们获取定制报价。"
     }
   ]
 }

@@ -2,11 +2,11 @@ import ogImageSrc from "@images/social.png";
 
 export const SITE = {
   title: "airdb",
-  tagline: "Top-quality Hardware Tools",
-  description: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
-  description_short: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+  tagline: "AI-Native Copilots & Data Solutions",
+  description: "Airdb is an AI-native company delivering intelligent copilots and a full spectrum of data, cloud, and security services. Start exploring and contact our sales team to see how we can help your business grow.",
+  description_short: "Airdb delivers AI-native copilots and data, cloud, and security services to help businesses grow.",
   url: "https://airdb.com",
-  author: "Emil Gulamov",
+  author: "Airdb",
 };
 
 export const SEO = {
@@ -33,7 +33,7 @@ export const OG = {
   locale: "en_US",
   type: "website",
   url: SITE.url,
-  title: `${SITE.title}: : Hardware Tools & Construction Services`,
-  description: "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+  title: `${SITE.title}: AI Copilots & Data Solutions`,
+  description: "Equip your business with Airdb's AI-native copilots and data, cloud, and security services. Trusted by industry leaders, Airdb offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge technology. Start exploring now!",
   image: ogImageSrc,
 };

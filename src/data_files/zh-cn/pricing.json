@@ -1,9 +1,9 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "简单、透明的定价",
+  "subTitle": "选择 Airdb 清晰、高性价比的方案，提升效率。",
+  "badge": "最超值",
+  "thirdOption": "需要企业解决方案？",
+  "btnText": "获取定制报价",
 
   "starterKit": {
     "name": "基础最小套餐",
@@ -26,7 +26,7 @@
     "description": "适合大规模企业选择",
     "price": "999",
     "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "billingFrequency": "USD / 月",
     "features": [
       "高优先级支持",
       "提供 CTO/CIO/CISO/DPO 等高级人才服务",
