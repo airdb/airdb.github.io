@@ -39,7 +39,7 @@ const languages: { [key: string]: string } = {
   "zh-CN": "zh-cn",
 };
 
-function createHref(lang: string, prefix: string, path: string): string {
+function createHref(prefix: string, path: string): string {
   const hasPrefix = path.startsWith(`/${prefix}/`);
 
   const basePath = hasPrefix ? path : `/${prefix}${path}`;
@@ -54,7 +54,7 @@ const alternateLanguageLinks: string = Object.entries(languages)
     const basePath: string =
       lang === "en" ? fullPath.replace(/^\/zh-cn\//, "/") : fullPath;
 
-    const href: string = createHref(lang, prefix, basePath);
+    const href: string = createHref(prefix, basePath);
 
     return `<link rel="alternate" hreflang="${lang}" href="${href}" />`;
   })
