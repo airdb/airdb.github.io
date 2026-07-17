@@ -104,15 +104,14 @@ const pageTitle: string = `Services | ${SITE.title}`;
     "@type": "WebPage",
     "@id": "https://airdb.com/services",
     url: "https://airdb.com/services",
-    name: "Expert Consultation Services | airdb",
+    name: `Expert Consultation Services | ${SITE.title}`,
     description:
-      "Uniting expertise with your vision, airdb provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.",
+      "Uniting expertise with your vision, Airdb provides exceptional service and comprehensive solutions in AI and data, from consultation to project completion.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://airdb.com",
-      name: "airdb",
-      description:
-        "airdb offers top-tier hardware tools and expert construction services to meet all your project needs.",
+      name: SITE.title,
+      description: SITE.description_short,
     },
     inLanguage: "en-US",
   }}

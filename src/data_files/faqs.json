@@ -2,28 +2,28 @@
   "subTitle": "Ask us anything about our brand and products, and get factual responses.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What's included in the Basic Service plan?",
+      "answer": "The Basic Service plan covers essential AI-powered tools and website hosting for small-scale needs, including standard support and access to core Airdb features. It's a curated starting point for teams getting started with AI in their workflows."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Can I upgrade from Basic Service to the Professional plan?",
+      "answer": "Absolutely! You can upgrade at any time to access a wider range of premium features, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "What discounts are available for enterprise or bulk agreements?",
+      "answer": "Enterprise customers are entitled to exclusive discounts, the percentage of which may vary depending on scale. Get in touch with us to discuss your needs, and we'll provide a tailored quote."
     },
     {
       "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "answer": "All our customers receive dedicated email support. With Basic Service you'll receive our standard support, while the Professional plan upgrades you to priority support, meaning faster response times and specialized assistance."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "How current are the online resources and documentation?",
+      "answer": "We regularly update our documentation and guides to reflect the latest developments in AI, data, and security, as well as new product features. Our material aims to be comprehensive and user-friendly for all skill levels."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Does Airdb offer services for large-scale enterprise projects?",
+      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and technical implementation, as well as staffing solutions for substantial projects. Contact us for a customized quote."
     }
   ]
 }

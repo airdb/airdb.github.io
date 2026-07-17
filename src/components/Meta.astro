@@ -36,11 +36,10 @@ const socialImage = Astro.url.origin + socialImageRes.src; // Get the full URL o
 
 const languages: { [key: string]: string } = {
   en: "",
-  fr: "fr",
+  "zh-CN": "zh-cn",
 };
 
-function createHref(lang: string, prefix: string, path: string): string {
-  console.log(lang);
+function createHref(prefix: string, path: string): string {
   const hasPrefix = path.startsWith(`/${prefix}/`);
 
   const basePath = hasPrefix ? path : `/${prefix}${path}`;
@@ -53,9 +52,9 @@ const fullPath: string = Astro.url.pathname;
 const alternateLanguageLinks: string = Object.entries(languages)
   .map(([lang, prefix]: [string, string]) => {
     const basePath: string =
-      lang === "en" ? fullPath.replace(/^\/fr\//, "/") : fullPath;
+      lang === "en" ? fullPath.replace(/^\/zh-cn\//, "/") : fullPath;
 
-    const href: string = createHref(lang, prefix, basePath);
+    const href: string = createHref(prefix, basePath);
 
     return `<link rel="alternate" hreflang="${lang}" href="${href}" />`;
   })

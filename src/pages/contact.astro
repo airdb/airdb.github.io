@@ -16,15 +16,14 @@ const pageTitle: string = `Contact | ${SITE.title}`;
     "@type": "WebPage",
     "@id": "https://airdb.com/contact",
     url: "https://airdb.com/contact",
-    name: "Contact Us | ScrewFast",
+    name: `Contact Us | ${SITE.title}`,
     description:
-      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
+      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our products and services.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://airdb.com",
-      name: "ScrewFast",
-      description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+      name: SITE.title,
+      description: SITE.description_short,
     },
     inLanguage: "en-US",
   }}

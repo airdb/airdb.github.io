@@ -69,15 +69,14 @@ const pageTitle: string = `Products | ${SITE.title}`;
     "@type": "WebPage",
     "@id": "https://airdb.com/products",
     url: "https://airdb.com/products",
-    name: "Hardware Tools | ScrewFast",
+    name: pageTitle,
     description:
-      "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.",
+      "Explore the range of Airdb products, built for both professionals and enthusiasts.",
     isPartOf: {
       "@type": "WebSite",
       url: "https://airdb.com",
-      name: "ScrewFast",
-      description:
-        "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+      name: SITE.title,
+      description: SITE.description_short,
     },
     inLanguage: "en-US",
   }}

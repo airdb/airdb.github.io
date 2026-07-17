@@ -3,6 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import starlightLinksValidator from "starlight-links-validator";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,27 +14,12 @@ export default defineConfig({
     domains: ["airdb.com"],
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
-  vite: {
-    resolve: {
-      alias: { "$lib": "./src/lib" }
-    }
-  },
-  // i18n: {
-  //   defaultLocale: "en",
-  //   locales: ["en", "fr"],
-  //   fallback: {
-  //     fr: "en",
-  //   },
-  //   routing: {
-  //     prefixDefaultLocale: false,
-  //   },
-  // },
   prefetch: true,
   integrations: [
     sitemap({
       i18n: {
         filter: (page) => !page.includes("404"),
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://airdb.com/` will be treated as default locale, i.e. `en`
+        defaultLocale: "en", // All urls that don't contain `zh-cn` after `https://airdb.com/` will be treated as default locale, i.e. `en`
         locales: {
           en: "en", // The `defaultLocale` value must present in `locales` keys
           "zh-cn": "zh-CN",
@@ -53,7 +39,6 @@ export default defineConfig({
           label: "English",
           lang: "en",
         },
-        en: { label: "English", lang: "en" },
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       // https://starlight.astro.build/guides/sidebar/
@@ -83,6 +68,7 @@ export default defineConfig({
       social: [
         { label: "github", icon: "github", href: "https://github.com/airdb" },
       ],
+      plugins: [starlightLinksValidator()],
       disable404Route: true,
       customCss: ["./src/assets/styles/starlight.css"],
       favicon: "/favicon.ico",
@@ -122,5 +108,8 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    resolve: {
+      alias: { "$lib": "./src/lib" },
+    },
   },
 });
