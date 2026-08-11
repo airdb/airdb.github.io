@@ -1,0 +1,25 @@
+User-agent: Googlebot
+User-agent: Googlebot-Image
+User-agent: Googlebot-Mobile
+User-agent: Googlebot-News
+User-agent: Googlebot-Video
+Disallow:
+Allow: /
+Crawl-delay: 10
+
+User-agent: Yandex
+Disallow:
+Allow: /
+Crawl-delay: 2
+
+User-agent: archive.org_bot
+Disallow:
+Allow: /
+Crawl-delay: 2
+
+User-agent: *
+Disallow:
+Allow: /
+Crawl-delay: 10
+
+Sitemap: https://airdb.com/sitemap-index.xml
