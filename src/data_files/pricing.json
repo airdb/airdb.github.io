@@ -3,7 +3,6 @@
   "subTitle": "Boost efficiency with Airdb's clear, value-driven plans.",
   "thirdOption": "Need something bigger?",
   "btnText": "Get a Custom Quote",
-
   "plans": [
     {
       "name": "Basic Service",
@@ -18,11 +17,10 @@
         "Access to core AI tools",
         "Community forum access"
       ],
-      "purchaseBtnTitle": "Get Started",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "Discuss this plan",
+      "purchaseLink": "/contact",
       "highlight": false
     },
-
     {
       "name": "Growth Plan",
       "description": "Best for growing teams that need dedicated AI and data support",
@@ -36,12 +34,11 @@
         "Monthly performance & usage reports",
         "Up to 5 team seats included"
       ],
-      "purchaseBtnTitle": "Start Growing",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "Discuss this plan",
+      "purchaseLink": "/contact",
       "highlight": true,
       "badge": "Best value"
     },
-
     {
       "name": "Professional Technical Adviser",
       "description": "Best for large scale uses",
@@ -55,8 +52,8 @@
         "High-level security & compliance technical solutions",
         "Unlimited team seats"
       ],
-      "purchaseBtnTitle": "Get Expert Support",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "Discuss this plan",
+      "purchaseLink": "/contact",
       "highlight": false
     }
   ]

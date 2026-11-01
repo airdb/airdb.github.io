@@ -5,7 +5,6 @@ import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
-import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -17,47 +16,13 @@ const product: CollectionEntry<"products">[] = (
   await getCollection("products")
 ).sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id
+    a.data.main.id - b.data.main.id,
 );
 
 // Define variables for page content
 const title: string = "Products";
 const subTitle: string =
   "Explore the innovation and reliability of AIRDB solutions, crafted to empower businesses in a digital-first world. From AI-driven automation to secure web services, each of our offerings is meticulously designed to enhance efficiency and deliver impactful results. Trust AIRDB to provide the technology and expertise you need to succeed in today’s competitive landscape.";
-
-// Testimonial data that will be rendered in the component
-const testimonials = [
-  // First testimonial data
-  {
-    content:
-      " \"Since switching to AIRDB's software tools, the efficiency on our websites has skyrocketed. They has completely changed the way our team works! The efficiency gains have been incredible.  It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
-    author: "Jason",
-    role: "CDN Comapny | Co-Founder",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-  // Second testimonial data
-  {
-    content:
-      ' "With its commitment to excellence and forward-thinking approach, AIRDB is redefining how companies solve real-world challenges and unlock true commercial value."',
-    author: "Fangbin Lin",
-    role: "Baobei Huijia | Head of Volunteer",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-  // Third testimonial data
-  {
-    content:
-      ' "AIRDB stands at the forefront of technological innovation, seamlessly integrating AI and advanced digital solutions to empower businesses with unparalleled intelligence and efficiency." ',
-    author: "Xiao Fang",
-    role: "Tangyi Food | Operations Manager",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-];
 
 const pageTitle: string = `Products | ${SITE.title}`;
 ---
@@ -99,7 +64,7 @@ const pageTitle: string = `Products | ${SITE.title}`;
           )
         }
       </div>
-      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+      <PrimaryCTA title="Contact us" url="/contact" noArrow={true} />
     </div>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
@@ -126,10 +91,5 @@ const pageTitle: string = `Products | ${SITE.title}`;
       "Proven Expertise: A dedicated team with deep industry knowledge, focused on delivering superior results.",
       "Comprehensive Support: End-to-end services, from design and development to hosting and security, ensuring seamless operations.",
     ]}
-  />
-  <!--Testimonials section-->
-  <TestimonialsSectionAlt
-    title="What Our Customers Say"
-    testimonials={testimonials}
   />
 </MainLayout>

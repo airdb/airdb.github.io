@@ -3,7 +3,6 @@
   "subTitle": "选择 Airdb 清晰、高性价比的方案，提升效率。",
   "thirdOption": "需要更大规模的方案？",
   "btnText": "获取定制报价",
-
   "plans": [
     {
       "name": "基础服务",
@@ -18,11 +17,10 @@
         "核心 AI 工具访问权限",
         "社区论坛访问权限"
       ],
-      "purchaseBtnTitle": "立刻开始",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "咨询此方案",
+      "purchaseLink": "/zh-cn/contact",
       "highlight": false
     },
-
     {
       "name": "成长方案",
       "description": "适合需要专属 AI 与数据支持的成长型团队",
@@ -36,12 +34,11 @@
         "每月性能与使用情况报告",
         "最多支持 5 个团队席位"
       ],
-      "purchaseBtnTitle": "开启成长",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "咨询此方案",
+      "purchaseLink": "/zh-cn/contact",
       "highlight": true,
       "badge": "最超值"
     },
-
     {
       "name": "专业技术顾问",
       "description": "适合大规模企业选择",
@@ -55,8 +52,8 @@
         "高水准的安全与合规技术解决方案",
         "不限团队席位数量"
       ],
-      "purchaseBtnTitle": "获取专家团队支持",
-      "purchaseLink": "#",
+      "purchaseBtnTitle": "咨询此方案",
+      "purchaseLink": "/zh-cn/contact",
       "highlight": false
     }
   ]

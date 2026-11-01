@@ -5,50 +5,48 @@ export const servicesData = [
     description:
       "Dive deep into helpful guides and explanations for all of Airdb's features",
     icon: "guides",
-    url: "#",
+    url: "/contact",
   },
   {
     title: "Discover Integrations",
     description:
       "Supercharge Your Workflow. Seamless integrations with all your favorite tools",
     icon: "puzzle",
-    url: "#",
+    url: "/contact",
   },
   {
     title: "Expert Services",
     description: "Go beyond the platform with Airdb's expert services",
     icon: "rocket",
-    url: "#",
+    url: "/contact",
   },
   {
     title: "Cutting-Edge Tools",
     description:
       "Build Smarter, Faster. Experience next-level efficiency with Airdb's cutting-edge AI tools",
     icon: "hammer",
-    url: "#",
+    url: "/contact",
   },
   {
     title: "Simple Plans",
     description:
       "Boost your efficiency with Airdb's straightforward, value-driven plans",
     icon: "sparks",
-    url: "#",
+    url: "/contact",
   },
   {
     title: "Community Forum",
     description: "Learn, share, and connect with other Airdb users",
     icon: "community",
-    url: "#",
+    url: "/contact",
   },
 ];
 
 export const successStoriesData = [
   {
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    alt: "Image Description",
-    description:
-      "See how Airdb has empowered businesses of all sizes to achieve outstanding results.",
-    learnMoreUrl: "#",
+    image: "/social.webp",
+    alt: "Service consultation illustration",
+    description: "Discuss how Airdb can support your business requirements.",
+    learnMoreUrl: "/contact",
   },
 ];

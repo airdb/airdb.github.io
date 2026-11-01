@@ -3,7 +3,6 @@
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import MegaMenuLink from "@components/ui/links/MegaMenuLink.astro";
-import Authentication from "../misc/Authentication.astro";
 import enStrings from "@utils/navigation.ts";
 import zhCNStrings from "@utils/zh-cn/navigation.ts";
 import BrandLogo from "@components/BrandLogo.astro";
@@ -86,7 +85,7 @@ const homeUrl = Astro.currentLocale === "zh-CN" ? "/zh-cn" : "/";
       <div
         class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 md:gap-y-0 md:ps-7 lg:gap-x-7"
       >
-        <!-- Navigation links and Authentication component -->
+        <!-- Navigation links -->
         {
           strings.navBarLinks.map((link) => {
             if (link.name === "Services") {
@@ -97,7 +96,6 @@ const homeUrl = Astro.currentLocale === "zh-CN" ? "/zh-cn" : "/";
           })
         }
 
-        <Authentication />
         <LanguagePicker />
         <!-- ThemeIcon component specifically for larger screens -->
         <span class="hidden md:inline-block">
@@ -151,7 +149,7 @@ const homeUrl = Astro.currentLocale === "zh-CN" ? "/zh-cn" : "/";
 
       if (dispatchEvent) {
         window.dispatchEvent(
-          new CustomEvent("on-hs-appearance-change", { detail: theme })
+          new CustomEvent("on-hs-appearance-change", { detail: theme }),
         );
       }
     },
@@ -181,10 +179,10 @@ const homeUrl = Astro.currentLocale === "zh-CN" ? "/zh-cn" : "/";
 
   window.addEventListener("load", () => {
     const $clickableThemes = document.querySelectorAll(
-      "[data-hs-theme-click-value]"
+      "[data-hs-theme-click-value]",
     );
     const $switchableThemes = document.querySelectorAll(
-      "[data-hs-theme-switch]"
+      "[data-hs-theme-switch]",
     );
 
     $clickableThemes.forEach(($item) => {
@@ -192,8 +190,8 @@ const homeUrl = Astro.currentLocale === "zh-CN" ? "/zh-cn" : "/";
         HSThemeAppearance.setAppearance(
           $item.getAttribute("data-hs-theme-click-value"),
           true,
-          $item
-        )
+          $item,
+        ),
       );
     });
 

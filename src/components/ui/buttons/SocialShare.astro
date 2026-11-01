@@ -3,7 +3,7 @@ import Icon from "@components/ui/icons/Icon.astro";
 // Destructure the properties from Astro.props
 const {
   pageTitle,
-  title = Astro.currentLocale === "fr" ? "Partager" : "Share",
+  title = Astro.currentLocale === "zh-CN" ? "分享" : "Share",
 } = Astro.props;
 
 // Define TypeScript interface for the properties
@@ -134,13 +134,13 @@ const socialPlatforms: SocialPlatform[] = [
 
         clipboard.on("success", () => {
           const defaultElement = el.querySelector<HTMLElement>(
-            ".js-clipboard-default"
+            ".js-clipboard-default",
           );
           const successElement = el.querySelector<HTMLElement>(
-            ".js-clipboard-success"
+            ".js-clipboard-success",
           );
           const successTextElement = el.querySelector<HTMLElement>(
-            ".js-clipboard-success-text"
+            ".js-clipboard-success-text",
           );
           const successText = el.dataset.clipboardSuccessText || "";
           let oldSuccessText: string | undefined;

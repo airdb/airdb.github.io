@@ -5,7 +5,6 @@ import PrimaryCTA from "@components/ui/buttons/PrimaryCTA.astro";
 import CardSmall from "@components/ui/cards/CardSmall.astro";
 import CardWide from "@components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "@components/sections/features/FeaturesStatsAlt.astro";
-import TestimonialsSectionAlt from "@components/sections/testimonials/TestimonialsSectionAlt.astro";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -17,7 +16,7 @@ const product: CollectionEntry<"products">[] = (
   await getCollection("products")
 ).sort(
   (a: CollectionEntry<"products">, b: CollectionEntry<"products">) =>
-    a.data.main.id - b.data.main.id
+    a.data.main.id - b.data.main.id,
 );
 
 // Define variables for page content
@@ -27,40 +26,6 @@ const subTitle: string = "基于自生的研发水平，提供专业的软件服
 const agentTitle: string = "代理产品";
 const agentSubTitle: string =
   "甄选的代理产品，高性价比 + 优质的代理服务， 为您提供更多选择。";
-
-// Testimonial data that will be rendered in the component
-const testimonials = [
-  // First testimonial data
-  {
-    content:
-      " \"Since adopting Airdb's AI copilot, the efficiency of our engineering workflow has skyrocketed. The reliability of the platform and the precision of its data pipelines are simply unmatched. It's refreshing to work with a company that truly understands the daily demands of the industry.\" ",
-    author: "Jason Clark",
-    role: "Engineering Lead | TopBuild Tech",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-  // Second testimonial data
-  {
-    content:
-      " \"As a product designer, I'm always looking for tools that help bring my ideas to life. Airdb's suite of AI copilots has been a game-changer for my projects, providing the perfect blend of quality and flexibility. The outstanding customer support was just the cherry on top!\" ",
-    author: "Maria Gonzalez",
-    role: "Product Designer | Creative Spaces",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-  // Third testimonial data
-  {
-    content:
-      " \"I've been a data engineer for over 15 years, and I can sincerely say that Airdb's data platform is some of the best I've used. It scales like no other, and I have full confidence in every pipeline we run on it. Plus, the service is impeccable – they truly care about my project's success.\" ",
-    author: "Richard Kim",
-    role: "Principal Data Engineer | WoodWright Labs",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-    avatarAlt: "Image Description",
-  },
-];
 
 const pageTitle: string = `Products | ${SITE.title}`;
 ---
@@ -102,7 +67,7 @@ const pageTitle: string = `Products | ${SITE.title}`;
           )
         }
       </div>
-      <PrimaryCTA title="客户反馈" url="#testimonials" noArrow={true} />
+      <PrimaryCTA title="联系我们" url="/zh-cn/contact" noArrow={true} />
     </div>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
@@ -138,7 +103,7 @@ const pageTitle: string = `Products | ${SITE.title}`;
           )
         }
       </div>
-      <PrimaryCTA title="客户反馈" url="#testimonials" noArrow={true} />
+      <PrimaryCTA title="联系我们" url="/zh-cn/contact" noArrow={true} />
     </div>
 
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
@@ -166,10 +131,5 @@ const pageTitle: string = `Products | ${SITE.title}`;
       "Innovative solutions tailored to modern business needs.",
       "Customer support dedicated to your project's success.",
     ]}
-  />
-  <!--Testimonials section-->
-  <TestimonialsSectionAlt
-    title="What Our Customers Say"
-    testimonials={testimonials}
   />
 </MainLayout>

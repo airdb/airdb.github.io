@@ -3,10 +3,8 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import HeroSection from "@components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "@components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
-import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
 import PricingSection from "@components/sections/pricing/PricingSection.astro";
 import FAQ from "@components/sections/misc/FAQ.astro";
 // import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
@@ -15,17 +13,10 @@ import heroImage from "@images/social.png";
 import faqs from "@data/zh-cn/faqs.json";
 import features from "@data/zh-cn/features.json";
 import pricing from "@data/zh-cn/pricing.json";
-import featureImage from "@images/features-image.avif";
+import featureImage from "@images/copilot-image-2.png";
 import construction from "@images/copilot-image-3.png";
 import tools from "@images/copilot-image-1.png";
 import dashboard from "@images/copilot-image-2.png";
-
-const avatarSrcs: Array<string> = [
-  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
-  "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
-];
 ---
 
 <MainLayout>
@@ -36,19 +27,9 @@ const avatarSrcs: Array<string> = [
     primaryBtn="开始探索"
     primaryBtnURL="/zh-cn/products"
     secondaryBtn="联系销售"
-    secondaryBtnURL="/contact"
-    withReview={true}
-    avatars={avatarSrcs}
-    rating=`<span class="font-bold">4.2</span> / 5`
-    starCount={4}
-    reviews=`From Over <span class="font-bold">20</span> companies integrated`
+    secondaryBtnURL="/zh-cn/contact"
     src={heroImage}
     alt="Airdb 产品与服务概览"
-  />
-
-  <ClientsSection
-    title="受到行业领导者的信赖"
-    subTitle="体验行业巨头选择的可靠性。"
   />
 
   <FeaturesGeneral
@@ -91,43 +72,9 @@ const avatarSrcs: Array<string> = [
     ]}
   />
 
-  <TestimonialsSection
-    title="加速您的项目进程"
-    subTitle="在 Airdb，我们确保您快速启动、即时开通账户，体验前所未有的高效。"
-    ;
-    testimonials={[
-      {
-        content:
-          "Airdb 大幅提升了我们的项目效率。开通即用，响应速度也非常出色，在 AI 与数据支持方面堪称行业变革者！",
-        author: "Samantha Ruiz",
-        role: "首席运营官 | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description: "服务客户 —— 从个人开发者到大型企业",
-      },
-      {
-        count: "35%",
-        description: "使用 Airdb 产品与服务后带来的项目效率提升",
-      },
-      {
-        count: "15.3%",
-        description: "长期客户反馈的运维成本降低幅度",
-      },
-      {
-        count: "5x",
-        description: "借助 AI Copilot 创新方案实现的交付提速",
-      },
-    ]}
-  />
-
   <PricingSection pricing={pricing} />
 
-  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+  <FAQ title="常见问题" faqs={faqs} />
 
   <HeroSectionAlt
     title="生在中国，走向世界。携手共建，全球增长。"

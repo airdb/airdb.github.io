@@ -12,7 +12,6 @@ export default defineConfig({
   image: {
     dangerouslyProcessSVG: true,
     domains: ["airdb.com"],
-    remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }],
   },
   prefetch: true,
   integrations: [
@@ -49,9 +48,7 @@ export default defineConfig({
             en: "Quick Start Guides",
             "zh-cn": "快速入门指南",
           },
-          items: [
-            { autogenerate: { directory: "guides" } }
-          ]
+          items: [{ autogenerate: { directory: "guides" } }],
         },
         {
           label: "About Us",
@@ -109,7 +106,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     resolve: {
-      alias: { "$lib": "./src/lib" },
+      alias: { $lib: "./src/lib" },
     },
   },
 });

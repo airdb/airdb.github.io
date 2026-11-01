@@ -38,7 +38,9 @@ type Plan = {
     </p>
   </div>
   <!-- Pricing plan cards - automatically created by mapping over `plans` array -->
-  <div class="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <div
+    class="grid grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3"
+  >
     {
       pricing.plans.map((plan: any) =>
         plan.highlight ? (
@@ -64,9 +66,7 @@ type Plan = {
               <span class="text-lg font-bold text-orange-100">
                 {plan.cents}
               </span>
-              <span class="ms-3 text-orange-200">
-                {plan.billingFrequency}
-              </span>
+              <span class="ms-3 text-orange-200">{plan.billingFrequency}</span>
             </div>
             <ul class="mb-6 space-y-2 text-orange-100">
               {plan.features.map((feature: string) => (
@@ -118,7 +118,7 @@ type Plan = {
               {plan.purchaseBtnTitle}
             </a>
           </div>
-        )
+        ),
       )
     }
   </div>
@@ -128,6 +128,9 @@ type Plan = {
       {pricing.thirdOption}
     </p>
 
-    <SecondaryCTA title={pricing.btnText} url="/contact" />
+    <SecondaryCTA
+      title={pricing.btnText}
+      url={Astro.currentLocale === "zh-CN" ? "/zh-cn/contact" : "/contact"}
+    />
   </div>
 </section>

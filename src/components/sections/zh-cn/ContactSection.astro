@@ -1,19 +1,13 @@
 ---
 // Import the necessary dependencies.
-import AuthBtn from "@components/ui/buttons/AuthBtn.astro";
 import ContactIconBlock from "@components/ui/blocks/ContactIconBlock.astro";
-import TextInput from "@components/ui/forms/input/TextInput.astro";
-import EmailContactInput from "@components/ui/forms/input/EmailContactInput.astro";
-import PhoneInput from "@components/ui/forms/input/PhoneInput.astro";
-import TextAreaInput from "@components/ui/forms/input/TextAreaInput.astro";
 import Icon from "@components/ui/icons/Icon.astro";
 
 // Define the variables that will be used in this component
 const title: string = "联系我们";
 const subTitle: string =
   "有疑问或想讨论项目吗？欢迎咨询，让我们用我们的工具和服务打造完美的解决方案。";
-const formTitle: string = "填写下面的表格";
-const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
+const formTitle: string = "通过邮件沟通需求";
 ---
 
 <!-- Contact Us -->
@@ -37,41 +31,13 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
         >
           {formTitle}
         </h2>
-        <!-- Form for user input with various input fields.-->
-        <!-- Each field utilizes a different input component for the specific type of input (text, email, phone, and textarea)-->
-        <form>
-          <div class="grid gap-4">
-            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <TextInput
-                id="hs-firstname-contacts"
-                label="名字"
-                name="hs-firstname-contacts"
-              />
-              <TextInput
-                id="hs-lastname-contacts"
-                label="姓氏"
-                name="hs-firstname-contacts"
-              />
-            </div>
-            <EmailContactInput id="hs-email-contacts" label="邮箱" />
-            <PhoneInput id="hs-phone-number" label="电话" />
-            <TextAreaInput
-              id="hs-about-contacts"
-              label="详细内容"
-              name="hs-about-contacts"
-            />
-          </div>
-
-          <div class="mt-4 grid">
-            <AuthBtn title="发送消息" />
-          </div>
-
-          <div class="mt-3 text-center">
-            <p class="text-sm text-neutral-600 dark:text-neutral-400">
-              {formSubTitle}
-            </p>
-          </div>
-        </form>
+        <p class="mb-6 text-neutral-600 dark:text-neutral-400">
+          请在邮件中介绍您的项目、需求和联系方式。
+        </p>
+        <a
+          class="font-bold text-orange-600 underline dark:text-orange-400"
+          href="mailto:support@airdb.cn">support@airdb.cn</a
+        >
       </div>
 
       <!--ContactIconBlocks are used to display different methods of contacting, including visiting office, email, browsing knowledgebase, and FAQ.-->
@@ -81,7 +47,7 @@ const formSubTitle: string = "我们将在 1-2 个工作日内回复您。";
           content="更喜欢书面文字？给我们发电子邮件"
           isLinkVisible={true}
           linkTitle="support@airdb.cn"
-          linkURL="#"
+          linkURL="mailto:support@airdb.cn"
           ><Icon name="envelopeOpen" />
         </ContactIconBlock>
 

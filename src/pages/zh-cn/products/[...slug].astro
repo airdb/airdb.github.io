@@ -31,6 +31,14 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
 ---
 
 <MainLayout title={pageTitle}>
+  <p
+    class="mx-auto max-w-[85rem] px-4 pt-8 text-sm text-neutral-600 dark:text-neutral-400"
+  >
+    以下产品资料为英文；如需中文介绍，请<a
+      class="underline"
+      href="/zh-cn/contact">联系我们</a
+    >。
+  </p>
   <div id="overlay" class="fixed inset-0 bg-neutral-200 dark:bg-neutral-800">
   </div>
 
@@ -105,10 +113,7 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
                 {product.data.longDescription.subTitle}
               </p>
               <p class="mt-5">
-                <PrimaryCTA
-                  title={product.data.longDescription.btnTitle}
-                  url={product.data.longDescription.btnURL}
-                />
+                <PrimaryCTA title="咨询项目需求" url="/zh-cn/contact" />
               </p>
             </div>
 
@@ -210,38 +215,6 @@ const pageTitle: string = `${product.data.title} | ${SITE.title}`;
             }
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="tabs-with-card-3" class="hidden" role="tabpanel">
-    <div class="mx-auto mb-20 flex w-full md:mb-28 2xl:w-4/5">
-      <div
-        class="relative top-12 left-12 z-10 overflow-hidden rounded-xl shadow-lg md:top-16 md:left-12 md:-ml-12 lg:ml-0"
-      >
-        {
-          product.data.blueprints.first && (
-            <Image
-              src={product.data.blueprints.first}
-              class="h-full w-full object-cover object-center"
-              alt="Blueprint Illustration"
-              format={"avif"}
-            />
-          )
-        }
-      </div>
-
-      <div class="relative right-12 overflow-hidden rounded-xl shadow-xl">
-        {
-          product.data.blueprints.second && (
-            <Image
-              src={product.data.blueprints.second}
-              class="h-full w-full object-cover object-center"
-              alt="Blueprint Illustration"
-              format={"avif"}
-            />
-          )
-        }
       </div>
     </div>
   </div>
