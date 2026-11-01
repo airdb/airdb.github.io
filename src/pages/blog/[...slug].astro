@@ -21,7 +21,7 @@ interface Props {
 const { post } = Astro.props;
 
 // 2. blogPosts 只获取一次
-const blogPosts = await getCollection("blog");
+const blogPosts = await getCollection("blog", ({ id }) => id.startsWith("en/"));
 
 // 3. relatedPosts 只定义一次
 const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
