@@ -24,6 +24,8 @@ jobs:
         run: |
           make install
           make build
+          pnpm test
+          pnpm check:site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

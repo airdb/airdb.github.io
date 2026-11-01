@@ -20,6 +20,15 @@ pnpm build
 pnpm preview
 ```
 
+Run the language-route tests and verify the generated site before deploying:
+
+```sh
+pnpm test
+pnpm check:site
+```
+
+`check:site` requires a completed build. It checks internal link targets, language alternatives, page metadata and Chinese blog links. Both checks also run in the deployment workflow.
+
 The build runs Astro's type and content checks, generates the static site, then processes the HTML with `process-html.mjs`. Output is written to `dist/`.
 
 ## Project structure

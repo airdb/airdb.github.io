@@ -21,7 +21,7 @@ interface Props {
 <a
   class="group relative block rounded-xl ring-zinc-500 transition duration-500 outline-none focus-visible:ring dark:ring-zinc-200 dark:focus:outline-none"
   href={blogLocale !== ""
-    ? `/${blogLocale}/blog/${getEntrySlug(blogEntry)}/`
+    ? `/${blogLocale}/blog/${getEntrySlug(blogEntry).replace(/^zh-cn\//, "en/")}/`
     : `/blog/${getEntrySlug(blogEntry)}/`}
   data-astro-prefetch
 >

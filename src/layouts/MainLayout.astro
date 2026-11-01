@@ -4,10 +4,16 @@ import Meta from "@components/Meta.astro";
 import Navbar from "@components/sections/navbar&footer/Navbar.astro";
 import FooterSection from "@components/sections/navbar&footer/FooterSection.astro";
 import { SITE } from "@data/constants";
+import { getLocale } from "@/lib/localization";
 import "@styles/global.css";
 
 // Setting expected props
-const { title = SITE.title, meta, structuredData, lang = "en" } = Astro.props;
+const {
+  title = SITE.title,
+  meta,
+  structuredData,
+  lang = getLocale(Astro.url.pathname),
+} = Astro.props;
 
 // Interface to type-check the properties
 interface Props {
@@ -20,12 +26,17 @@ interface Props {
 
 <!--
 This is the main structure for the page.
-We set the language of the page to English and add classes for scrollbar and scroll behavior.
+Set the page language from its route and apply scrollbar and scroll behavior.
 -->
 <html lang={lang} class="scrollbar-hide lenis lenis-smooth scroll-pt-16">
   <head>
     <!-- Adding metadata to the HTML document -->
-    <Meta meta={meta} structuredData={structuredData} />
+    <Meta
+      title={title}
+      lang={lang}
+      meta={meta}
+      structuredData={structuredData}
+    />
     <!-- Define the title of the page -->
     <title>{title}</title>
     <script is:inline>

@@ -4,61 +4,49 @@ import { OG, SEO, SITE } from "@data/constants";
 import faviconSvgSrc from "@images/icon.svg";
 import faviconSrc from "@images/icon.png";
 
-// Default properties for the Meta component. These values are used if props are not provided.
-// 'meta' sets a default description meta tag to describe the page content.
-// 'structuredData' defines default structured data in JSON-LD format to enhance search engine understanding of the page (for SEO purposes).
-const defaultProps = {
-  meta: SITE.description,
-  structuredData: SEO.structuredData,
-};
+import { getLocale, getLocalizedPath } from "@/lib/localization";
 
-// Extract props with default values assigned from defaultProps. Values can be overridden when the component is used.
-// For example:
-// <MainLayout title="Custom Title" meta="Custom description." />
 const {
-  meta = defaultProps.meta,
-  structuredData = defaultProps.structuredData,
+  title = SITE.title,
+  meta = SITE.description,
+  lang = getLocale(Astro.url.pathname),
+  structuredData: suppliedStructuredData = SEO.structuredData,
 } = Astro.props;
-
-// Define the metadata for your website and individual pages
-const URL = `${Astro.site}`; // Set the website URL in astro.config.mjs
+const site = Astro.site ?? new URL(SITE.url);
+const isNotFound = /^\/404(?:\.html|\/)?$/.test(Astro.url.pathname);
+const canonical = new URL(isNotFound ? "/404.html" : Astro.url.pathname, site)
+  .href;
 const author = SITE.author;
-const canonical = Astro.url.href;
-// const basePath = Astro.url.pathname;
-const ogTitle = OG.title;
-const ogDescription = OG.description;
+const ogTitle = title;
+const ogDescription = meta;
+const structuredData = {
+  ...suppliedStructuredData,
+  "@context": "https://schema.org",
+  "@id": canonical,
+  url: canonical,
+  name: title,
+  description: meta,
+  inLanguage: lang === "zh-CN" ? "zh-CN" : "en-US",
+};
 const socialImageRes = await getImage({
   src: OG.image,
   width: 1200,
   height: 600,
+  format: "png",
 });
-const socialImage = Astro.url.origin + socialImageRes.src; // Get the full URL of the image (https://stackoverflow.com/a/9858694)
-
-const languages: { [key: string]: string } = {
-  en: "",
-  "zh-CN": "zh-cn",
-};
-
-function createHref(prefix: string, path: string): string {
-  const hasPrefix = path.startsWith(`/${prefix}/`);
-
-  const basePath = hasPrefix ? path : `/${prefix}${path}`;
-  const normalizedBasePath = basePath.replace(/\/\/+/g, "/");
-  return `${URL.slice(0, -1)}${normalizedBasePath}`;
-}
-
-const fullPath: string = Astro.url.pathname;
-
-const alternateLanguageLinks: string = Object.entries(languages)
-  .map(([lang, prefix]: [string, string]) => {
-    const basePath: string =
-      lang === "en" ? fullPath.replace(/^\/zh-cn\//, "/") : fullPath;
-
-    const href: string = createHref(prefix, basePath);
-
-    return `<link rel="alternate" hreflang="${lang}" href="${href}" />`;
-  })
-  .join("\n");
+const socialImage = new URL(socialImageRes.src, site).href;
+const alternateLanguageLinks = isNotFound
+  ? []
+  : [
+      {
+        lang: "en",
+        href: new URL(getLocalizedPath(Astro.url.pathname, "en"), site).href,
+      },
+      {
+        lang: "zh-CN",
+        href: new URL(getLocalizedPath(Astro.url.pathname, "zh-CN"), site).href,
+      },
+    ];
 
 // Generate and optimize the favicon images
 const faviconSvg = await getImage({
@@ -94,11 +82,16 @@ const appleTouchIcon = await getImage({
 />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <link rel="canonical" href={canonical} />
-<Fragment set:html={alternateLanguageLinks} />
+{isNotFound && <meta name="robots" content="noindex" />}
+{
+  alternateLanguageLinks.map(({ lang, href }) => (
+    <link rel="alternate" hreflang={lang} href={href} />
+  ))
+}
 
 <!-- Facebook Meta Tags -->
-<meta property="og:locale" content="en_US" />
-<meta property="og:url" content={URL} />
+<meta property="og:locale" content={lang === "zh-CN" ? "zh_CN" : "en_US"} />
+<meta property="og:url" content={canonical} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={ogTitle} />
 <meta property="og:site_name" content={SITE.title} />
@@ -110,8 +103,8 @@ const appleTouchIcon = await getImage({
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:domain" content={URL} />
-<meta property="twitter:url" content={URL} />
+<meta property="twitter:domain" content={site.hostname} />
+<meta property="twitter:url" content={canonical} />
 <meta name="twitter:title" content={ogTitle} />
 <meta name="twitter:description" content={ogDescription} />
 <meta name="twitter:image" content={socialImage} />

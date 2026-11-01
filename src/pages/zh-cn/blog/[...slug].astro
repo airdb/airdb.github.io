@@ -16,10 +16,10 @@ import { getEntrySlug } from "@/lib/content";
 // getStaticPaths is used to pre-render all routes based on the blog posts
 export async function getStaticPaths() {
   const blogPosts = await getCollection("blog", ({ id }) => {
-    return id.startsWith("en/");
+    return id.startsWith("zh-cn/");
   });
   return blogPosts.map((post) => ({
-    params: { slug: getEntrySlug(post) },
+    params: { slug: getEntrySlug(post).replace(/^zh-cn\//, "en/") },
     props: { post },
   }));
 }
@@ -30,7 +30,7 @@ const { post } = Astro.props;
 const blogPosts: CollectionEntry<"blog">[] = await getCollection(
   "blog",
   ({ id }) => {
-    return id.startsWith("en/");
+    return id.startsWith("zh-cn/");
   },
 );
 
@@ -45,7 +45,7 @@ const relatedPosts: CollectionEntry<"blog">[] = blogPosts.filter(
 const pageTitle: string = `${post.data.title} | ${SITE.title}`;
 ---
 
-<MainLayout title={pageTitle}>
+<MainLayout title={pageTitle} meta={post.data.description}>
   <section class="mx-auto max-w-3xl px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pt-10">
     <div class="max-w-2xl">
       <div class="mb-6 flex items-center justify-between">
@@ -134,11 +134,7 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
         </div>
       </div>
     </div>
-    <PostFeedback
-      title="Was this post helpful?"
-      firstChoice="Yes"
-      secondChoice="No"
-    />
+    <PostFeedback />
   </section>
 
   <!--Related articles section-->
@@ -152,7 +148,11 @@ const pageTitle: string = `${post.data.title} | ${SITE.title}`;
     </div>
 
     <div class="grid grid-cols-2 gap-6">
-      {relatedPosts.map((entry) => <CardRelated blogEntry={entry} />)}
+      {
+        relatedPosts.map((entry) => (
+          <CardRelated blogEntry={entry} recentBlogLocale="zh-cn" />
+        ))
+      }
     </div>
   </section>
 </MainLayout>

@@ -38,7 +38,7 @@ interface Props {
       <a
         class="ring-zinc-500 transition duration-300 outline-none hover:text-orange-400 focus-visible:ring dark:text-neutral-300 dark:ring-zinc-200 dark:hover:text-neutral-50 dark:focus:outline-none"
         href={recentBlogLocale !== ""
-          ? `/${recentBlogLocale}/blog/${getEntrySlug(blogEntry)}/`
+          ? `/${recentBlogLocale}/blog/${getEntrySlug(blogEntry).replace(/^zh-cn\//, "en/")}/`
           : `/blog/${getEntrySlug(blogEntry)}/`}
       >
         {blogEntry.data.description}
@@ -61,7 +61,7 @@ interface Props {
     <div class="mt-5">
       <PrimaryCTA
         url={recentBlogLocale !== ""
-          ? `/${recentBlogLocale}/blog/${getEntrySlug(blogEntry)}/`
+          ? `/${recentBlogLocale}/blog/${getEntrySlug(blogEntry).replace(/^zh-cn\//, "en/")}/`
           : `/blog/${getEntrySlug(blogEntry)}/`}
         title="Read More"
         data-astro-prefetch

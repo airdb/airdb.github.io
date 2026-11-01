@@ -1,6 +1,7 @@
 ---
-import { languages } from "@utils//ui";
+import { languages } from "@utils/ui";
 import Icon from "./icons/Icon.astro";
+import { getLocalizedPath } from "@/lib/localization";
 ---
 
 <div class="hs-dropdown relative inline-flex">
@@ -26,14 +27,17 @@ import Icon from "./icons/Icon.astro";
 
   <div
     class="hs-dropdown-menu duration !left-[20%] !top-[98%] mt-2 hidden !transform-none rounded-lg bg-neutral-50 p-2 opacity-0 shadow-md transition-[opacity,margin] before:absolute before:-top-4 before:start-0 before:h-4 before:w-full after:absolute after:-bottom-4 after:start-0 after:h-4 after:w-full hs-dropdown-open:opacity-100 dark:divide-neutral-700 dark:border dark:border-neutral-700 dark:bg-neutral-800 md:!left-[90%] md:!top-[80%]"
-    aria-labelledby="hs-dropdown-hover-event"
+    aria-labelledby="hs-dropdown-default"
   >
     {
       // Map through the list of languages, creating a link for each language
       Object.entries(languages).map(([lang, label]) => (
         <a
           class="flex items-center gap-x-3.5 rounded-lg px-3 py-2 text-sm text-neutral-800 hover:bg-neutral-100 focus:bg-neutral-100 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700"
-          href={`/${lang === "en" ? "" : lang}`}
+          href={getLocalizedPath(
+            Astro.url.pathname,
+            lang === "en" ? "en" : "zh-CN",
+          )}
         >
           {label}
         </a>
@@ -46,54 +50,4 @@ import Icon from "./icons/Icon.astro";
 <!--https://preline.co/plugins/html/dropdown.html-->
 <script>
   import "@preline/dropdown/index.js";
-</script>
-
-<script>
-  // Type alias for supported languages
-  type TLanguage = "en" | "zh-cn";
-  // array of supported languages
-  const languages: TLanguage[] = ["en", "zh-cn"];
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const languageLinks = document.querySelectorAll(".hs-dropdown-menu a");
-    languageLinks.forEach((element) => {
-      const link = element as HTMLAnchorElement;
-      const lang = link
-        .getAttribute("href")
-        ?.replace("/", "")
-        .replace("/", "") as TLanguage;
-
-      link.addEventListener("click", function (event) {
-        event.preventDefault();
-
-        const url = new URL(window.location.href);
-        const pathParts = url.pathname
-          .split("/")
-          .filter((part) => part && !languages.includes(part as TLanguage));
-
-        // Disable the selection of the same language
-        if (lang === url.pathname.split("/")[1]) return;
-
-        if (
-          url.pathname.includes("/post") ||
-          url.pathname.includes("/insight")
-        ) {
-          if (url.pathname.includes("en")) {
-            pathParts.unshift(lang);
-            pathParts.splice(2, 0, lang);
-          } else {
-            pathParts.unshift(lang);
-            pathParts.splice(2, 0, "en");
-          }
-        } else {
-          if (lang !== "en") {
-            pathParts.unshift(lang);
-          }
-        }
-
-        url.pathname = pathParts.join("/");
-        window.location.href = url.toString();
-      });
-    });
-  });
 </script>

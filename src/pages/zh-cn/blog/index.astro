@@ -8,19 +8,19 @@ import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import { SITE } from "@data/constants";
 
-// Get all blogs post in English and sort them based on publish date
+// Read the Chinese collection, including explicitly labelled English originals.
 
-const englishBlogEntries = await getCollection("blog", ({ id }) => {
-  return id.startsWith("en/");
+const localizedBlogEntries = await getCollection("blog", ({ id }) => {
+  return id.startsWith("zh-cn/");
 });
 
 const englishInsightsEntries = await getCollection("insights", ({ id }) => {
   return id.startsWith("en/");
 });
 
-const blogPosts: CollectionEntry<"blog">[] = englishBlogEntries.sort(
+const blogPosts: CollectionEntry<"blog">[] = localizedBlogEntries.sort(
   (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
-    b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 // Get all insights posts
 const insightPosts: CollectionEntry<"insights">[] = englishInsightsEntries;
@@ -30,14 +30,13 @@ const mostRecentPost: CollectionEntry<"blog"> = blogPosts[0];
 const otherPosts: CollectionEntry<"blog">[] = blogPosts.slice(1);
 
 // Define variables for page content
-const title: string = "Your Gateway To business Intelligence";
+const title: string = "探索 AI 与商业智能";
 const subTitle: string =
-  "Explore the latest news, tips, and insights from Airdb to enhance your knowledge, productivity, and decision-making with cutting-edge AI-driven solutions.";
-const secondTitle: string = "Insights";
-const secondSubTitle: string =
-  "Stay informed about the latest advancements and innovations in AI and technology with insights from AirDB’s team of experts.";
+  "了解 Airdb 关于 AI、数据和企业服务的文章；尚未翻译的内容标有英文原文。";
+const secondTitle: string = "技术洞察（英文原文）";
+const secondSubTitle: string = "阅读团队关于人工智能与技术应用的思考。";
 
-const pageTitle: string = `Blog | ${SITE.title}`;
+const pageTitle: string = `博客 | ${SITE.title}`;
 ---
 
 <MainLayout
@@ -45,9 +44,9 @@ const pageTitle: string = `Blog | ${SITE.title}`;
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://airdb.com/blog",
-    url: "https://airdb.com/blog",
-    name: `Blog | ${SITE.title}`,
+    "@id": "https://airdb.com/zh-cn/blog",
+    url: "https://airdb.com/zh-cn/blog",
+    name: `博客 | ${SITE.title}`,
     description:
       "Stay up-to-date with the latest trends and developments in AI and data with insights from Airdb's team of industry experts.",
     isPartOf: {
@@ -56,7 +55,7 @@ const pageTitle: string = `Blog | ${SITE.title}`;
       name: SITE.title,
       description: SITE.description_short,
     },
-    inLanguage: "en-US",
+    inLanguage: "zh-CN",
   }}
 >
   <section
@@ -83,14 +82,18 @@ const pageTitle: string = `Blog | ${SITE.title}`;
   >
     <!--Blog posts grid-->
     <div class="grid gap-6 lg:grid-cols-2">
-      {otherPosts.map((blogEntry) => <CardBlog blogEntry={blogEntry} />)}
+      {
+        otherPosts.map((blogEntry) => (
+          <CardBlog blogEntry={blogEntry} blogLocale="zh-cn" />
+        ))
+      }
     </div>
   </section>
   <!--Most recent blog post-->
   <section
     class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
   >
-    <CardBlogRecent blogEntry={mostRecentPost} />
+    <CardBlogRecent blogEntry={mostRecentPost} recentBlogLocale="zh-cn" />
   </section>
   <!--Insights section-->
   <section
